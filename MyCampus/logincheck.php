@@ -36,7 +36,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     }
      else {
         echo "用户名或密码错误，请重试";
-        header("Refresh:1;url=login.htmml");
+        header("Refresh:1;url=login.html");
     }
     $conn->close();
 }
