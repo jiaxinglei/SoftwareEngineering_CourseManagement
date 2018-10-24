@@ -104,7 +104,7 @@ if(isset($_POST["submit"]))
     }
     else
     {
-        $sql = "INSERT INTO login_tbl ".
+        $sql = "INSERT INTO $dbname ".
             "(username,password,date,stu_name,stu_id,college,major) ".
             "VALUES ".
             "('$user','$psw',NOW(),'$name','$num','$sch','$maj')";
