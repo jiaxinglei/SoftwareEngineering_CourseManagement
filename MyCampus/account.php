@@ -59,7 +59,7 @@
                 session_start();
                 echo "<h4>Name: {$_SESSION['name']}<h4>";
                 echo "<h4>Student Number: {$_SESSION['stu_id']}</h4>";
-                echo "<h4>Academy: {$_SESSION['college']}</h4>";
+                echo "<h4>Academy: {$_SESSION['school']}</h4>";
                 echo "<h4>Major: {$_SESSION['major']}</h4>";
             ?>
         </div>

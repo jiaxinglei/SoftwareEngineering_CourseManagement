@@ -6,9 +6,9 @@
  * Time: 11:05
  */
 
-$servername = "localhost";
-$username = "root";
-$password = "jiaXINGlei123";
+$servername = "";  //此处需填写正确的服务器名称
+$username = "";  //此处需填写正确的用户名
+$password = "";  //此处需填写正确的密码
 $dbname = "stu_info";
 ?>
 <?php
@@ -23,7 +23,7 @@ $dbname = "stu_info";
     while($row=$result->fetch_array()){
         $_SESSION["name"]=$row['name'];
         $_SESSION['stu_id']=$row['stu_id'];
-        $_SESSION['college']=$row['college'];
+        $_SESSION['school']=$row['school'];
         $_SESSION['major']=$row['major'];
     }
     header('location:account.php');

@@ -62,10 +62,10 @@
  * Time: 15:48
  */
 
-     $servername = "localhost";
-     $username = "root";
-     $password = "jiaXINGlei123";
-     $dbname = "stu_info";
+$servername = "";  //此处需填写正确的服务器名称
+$username = "";  //此处需填写正确的用户名
+$password = "";  //此处需填写正确的密码
+$dbname = "stu_info";
 ?>
 
 <?php
@@ -104,22 +104,26 @@ if(isset($_POST["submit"]))
     }
     else
     {
-        $sql = "INSERT INTO $dbname ".
-            "(username,password,date,stu_name,stu_id,college,major) ".
-            "VALUES ".
-            "('$user','$psw',NOW(),'$name','$num','$sch','$maj')";
-
-
-
-        mysqli_select_db( $conn, $dbname );
-        $retval = mysqli_query( $conn, $sql );
-        if(! $retval )
-        {
-            die('注册错误: ' . mysqli_error($conn));
+        $sql = "SELECT * FROM stu_info WHERE (username='$user')";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            echo "<script>alert('用户名已被使用！'); history.go(-1);</script>";
         }
-        echo "<script>alert('注册成功');window.location.href=\"login.html\";</script>";
-        mysqli_close($conn);
+        else{
+            $sql = "INSERT INTO stu_info ".
+                "(username,password,date,name,stu_id,school,major) ".
+                "VALUES ".
+                "('$user','$psw',NOW(),'$name','$num','$sch','$maj')";
 
+            $retval = mysqli_query( $conn, $sql );
+            if(! $retval )
+            {
+                die('注册错误: ' . mysqli_error($conn));
+            }
+            echo "<script>alert('注册成功');window.location.href=\"login.html\";</script>";
+            mysqli_close($conn);
+
+        }
 
     }
 }
