@@ -1,10 +1,10 @@
 <?php
-        $conn=mysqli_connect("localhost","root","root");
-        if(! $conn)
-        {
-            die ('connect error:'.mysqli_error($conn));
-        }
-        mysqli_select_db($conn,'login')or die("数据库访问错误");
+    $conn=mysqli_connect($servername,$username,$password);
+    if(! $conn)
+    {
+        die ('connect error:'.mysqli_error($conn));
+    }
+    mysqli_select_db($conn,$dbname)or die("数据库访问错误");
 ?>
 
 
@@ -66,7 +66,6 @@
             <h3>Courses</h3>
             <ul><!--courses 从数据库导入-->
 
-
                 <?php
                     $sql = "select * from course_tbl ";
                     $result=mysqli_query($conn,$sql);
@@ -75,9 +74,7 @@
                         $row = mysqli_fetch_array($result);
                         $courseName=$row["courseName"];
                         $courseId=$row["courseId"];
-                        $syllabus=$row["Syllabus"];
                         echo "<li><a href='$courseId.php'>[".$courseId."] ".$courseName."</a></li>";
-
                     }
                 ?>
 
@@ -101,9 +98,7 @@
         <h4>professor: Mr. Zhang</h4>
         <h4>Introduction:</h4>
         <p>this course is a very important course for students in university.
-            lulululululululululululuululululu
-            lulululululululu
-            lululu
+
         </p>
         <h4>Midterm:</h4>
         <p>November,11th</p>
@@ -188,16 +183,20 @@
 <div id="footer-bottom">
 
     <p class="bottom-left">
-        &nbsp; &copy;2008 All your copyright info here
-        Design by : <a href="http://www.styleshout.com/">styleshout</a>
+        &nbsp; &copy;2018 All copyright:
+        Design by MYCAMPUS team
     </p>
 
+    <script>
+        function showemail(){
+            alert('Contact us at: ' +
+                'mycampus@sjtu.edu.cn')
+        }
+    </script>
     <p class="bottom-right" >
-        <a href="EI203.php">Home</a> |
-        <a href="EI203.php">Sitemap</a> |
-        <a href="EI203.php">RSS Feed</a> |
-        <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> |
-        <a href="http://validator.w3.org/check/referer">XHTML</a>
+        <a href="mainpage.php">Home</a> |
+        <a href="help.php">Help</a> |
+        <a onclick="showemail()">Contact us</a>
     </p>
 
 </div>

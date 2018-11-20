@@ -31,12 +31,11 @@ $dbname = "stu_info";
         //判断结果集的记录数是否大于0
         if ($result->num_rows > 0) {
             $_SESSION["username"]=$name;
-            echo "登陆成功！";
-            header("Refresh:1;url=mainpage.html");
+            echo "<script>alert('登陆成功!');window.location.href='mainpage.php'</script>";
         }
          else {
             echo "用户名或密码错误，请重试";
-            header("Refresh:1;url=login.html");
+            header("Refresh:1;url=login.php");
         }
         $conn->close();
 }

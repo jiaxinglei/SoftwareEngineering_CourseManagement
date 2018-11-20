@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
@@ -194,85 +194,26 @@
 
 		<!-- left-columns starts -->
 
+    <div id="footer-bottom">
 
-	<!-- footer starts here -->
-	<!--
-	<div id="footer-wrapper" class="container_16">
-	
-		<div id="footer-content">
-		
-			<div class="grid_8">
-		
-				<h3>Resource Links</h3>			
-				<p>
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. 
-				Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu 
-				posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum 
-				odio, ac blandit ante orci ut diam. <a href="course.php">Read more...</a>
-				</p>
-			
-				<ul class="footer-list">				
-					<li><a href="http://themeforest.net?ref=ealigam">ThemeForest - <span>Your Choice for Site Templates &amp; Wordpress Themes</span></a></li>
-					<li><a href="http://www.cssmania.com/">CSSMania - <span>CSS Design Showcase</span></a></li>
-					<li><a href="http://www.alistapart.com/">AListApart - <span>For People Who Make Websites</span></a></li>
-					<li><a href="http://www.psdtuts.com/">PSDTuts.com - <span>Photoshop Tutorials And Links</span></a></li>
-					<li><a href="http://www.pdphoto.org/">PDPhoto.org - <span>Public Domain Photos</span></a></li>						
-					<li><a href="http://www.freephotos.se/">FreePhotos.se - <span>Free &amp; Public Domain Photos</span></a></li>	
-					<li><a href="http://www.fotolia.com/partner/114283">Fotolia - <span>Free stock images or from $1</span></a></li>						
-					<li><a href="http://www.4templates.com/?aff=ealigam">4templates - <span>Low Cost Hi-Quality Templates</span></a></li>	
-				</ul>			
-						
-			</div>
-			
-			<div class="grid_8">
-					
-				<h3>Image Gallery </h3>					
-				<p class="thumbs">
-					<a href="course.php"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
-					<a href="course.php"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
-					<a href="course.php"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
-					<a href="course.php"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
-					<a href="course.php"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
-					<a href="course.php"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
-					<a href="course.php"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
-					<a href="course.php"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
-					<a href="course.php"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
-					<a href="course.php"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
-					<a href="course.php"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
-					<a href="course.php"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
-				</p>	
-			
-				<h3>About</h3>			
-				<p>
-				<a href="http://getfirefox.com/"><img src="images/gravatar.jpg" width="40" height="40" alt="firefox" class="float-left" /></a>
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. 
-				Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu 
-				posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum 
-				odio, ac blandit ante orci ut diam.</p>
-				<p>
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. 
-				Cras id urna. <a href="course.php">Learn more...</a></p>
-					
-			</div>	
-		
-		</div> -->
-	
-		<div id="footer-bottom">
-	
-			<p class="bottom-left">			
-			&nbsp; &copy;2008 All your copyright info here &nbsp; &nbsp;
-			Design by : <a href="http://www.styleshout.com/">styleshout</a>												
-			</p>	
-			
-			<p class="bottom-right" >
-				<a href="course.php">Home</a> |
-				<a href="course.php">Sitemap</a> |
-				<a href="course.php">RSS Feed</a> |
-				<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | 
-		   	<a href="http://validator.w3.org/check/referer">XHTML</a>
-			</p>
-	
-		</div>	
+        <p class="bottom-left">
+            &nbsp; &copy;2018 All copyright:
+            Design by MYCAMPUS team
+        </p>
+
+        <script>
+            function showemail(){
+                alert('Contact us at: ' +
+                    'mycampus@sjtu.edu.cn')
+            }
+        </script>
+        <p class="bottom-right" >
+            <a href="mainpage.php">Home</a> |
+            <a href="help.php">Help</a> |
+            <a onclick="showemail()">Contact us</a>
+        </p>
+
+    </div>
 			
 	</div>
 	<!-- footer ends here -->

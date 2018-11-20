@@ -21,23 +21,23 @@
 <!-- header starts-->
 <div id="header-wrap"><div id="header" class="container_16">
 
-        <h1 id="logo-text"><a href="course.html" title="">My Campus</a></h1>
+        <h1 id="logo-text"><a href="course.php" title="">My Campus</a></h1>
         <p id="intro">your best course manager...</p>
 
         <!-- navigation -->
         <div  id="nav">
             <ul>
-                <li><a href="mainpage.html">Home</a></li>
-                <li><a href="course.html">Courses</a></li>
-                <li><a href="assignments.html">assignments</a></li>
+                <li><a href="mainpage.php">Home</a></li>
+                <li><a href="course.php">Courses</a></li>
+                <li><a href="assignments.php">assignments</a></li>
                 <li><a href="http://mail.sjtu.edu.cn">inbox</a></li>
-                <li id="current"><a href="account.html">account</a></li>
+                <li id="current"><a href="account.php">account</a></li>
             </ul>
         </div>
 
         <div id="header-image"></div>
 
-        <form id="quick-search" action="course.html" method="get" >
+        <form id="quick-search" action="course.php" method="get" >
             <p>
                 <label for="qsearch">Search:</label>
                 <input class="tbox" id="qsearch" type="text" name="qsearch" value="Search..." title="Start typing and hit ENTER" />

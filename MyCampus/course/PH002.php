@@ -7,6 +7,7 @@
     mysqli_select_db($conn,$dbname)or die("数据库访问错误");
 ?>
 
+
 <!DOCTYPE html >
 
 <html>
@@ -22,7 +23,7 @@
     <meta name="robots" content="index, follow, noarchive" />
     <meta name="googlebot" content="noarchive" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css" />
 
 </head>
 <body>
@@ -30,17 +31,17 @@
 <!-- header starts-->
 <div id="header-wrap"><div id="header" class="container_16">
 
-    <h1 id="logo-text"><a href="course.php" title="">My Campus</a></h1>
+    <h1 id="logo-text"><a href="EI203.php" title="">My Campus</a></h1>
     <p id="intro">the best course manager...</p>
 
     <!-- navigation -->
     <div  id="nav">
         <ul>
-            <li><a href="mainpage.php">Home</a></li>
-            <li id ="current"><a href="course.php">courses</a></li>
-            <li><a href="assignments.php">assignments</a></li>
+            <li><a href="../mainpage.php">Home</a></li>
+            <li id ="current"><a href="EI203.php">courses</a></li>
+            <li><a href="../assignments.php">assignments</a></li>
             <li><a href="http://mail.sjtu.edu.cn">inbox</a></li>
-            <li><a href="account.php">account</a></li>
+            <li><a href="../account.php">account</a></li>
         </ul>
     </div>
 
@@ -55,15 +56,16 @@
 
 <div id="content-outer"><div id="content-wrapper" class="container_16">
 
+
+
     <!-- left-columns starts -->
     <!-- left-columns starts -->
     <div id="left-columns" class="grid_4 alpha">
 
         <div class="sidemenu">
             <h3>Courses</h3>
-            <ul>
+            <ul><!--courses 从数据库导入-->
 
-                <!--courses 从数据库导入-->
                 <?php
                     $sql = "select * from course_tbl ";
                     $result=mysqli_query($conn,$sql);
@@ -72,7 +74,8 @@
                         $row = mysqli_fetch_array($result);
                         $courseName=$row["courseName"];
                         $courseId=$row["courseId"];
-                        echo "<li><a href='course/$courseId.php'>[".$courseId."] ".$courseName."</a></li>";
+                        echo "<li><a href='$courseId.php'>[".$courseId."] ".$courseName."</a></li>";
+
                     }
                 ?>
 
@@ -81,16 +84,34 @@
 
         </div>
 
+
     </div>
+
+
     <!-- content starts -->
     <!-- content starts -->
 
     <!-- main -->
     <div id="main" class="grid_8">
 
-        <h3>CLASS TABLE</h3>
-        <h4>choose a course from the left column.</h4>
+        <h3 id="syllabus">Course Name</h3>
 
+        <h4>professor: Mr. Zhang</h4>
+        <h4>Introduction:</h4>
+        <p>this course is a very important course for students in university.
+
+        </p>
+        <h4>Notice:</h4>
+        <p>Please attend class on time at guangming stadium.</p>
+
+
+
+        <h3><a href="EI203.php">Assignments</a></h3>
+
+
+        <p><a href="http://getfirefox.com/"></a>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
+        </p>
 
 
 
@@ -108,26 +129,26 @@
 
         <div class="featured-post">
 
-            <h4><a href="course.php">[CS101]Homework 2</a></h4>
-            <p class="post-info">Posted by <a href="course.php">erwin</a><br>due on 09/26/08 </p>
+            <h4><a href="EI203.php">[CS101]Homework 2</a></h4>
+            <p class="post-info">Posted by <a href="EI203.php">erwin</a><br>due on 09/26/08 </p>
             <p>
                 <a href="http://getfirefox.com/"></a>
                 Vestibulum venenatis. Nulla vel ipsum. Proin rutrum, urna sit
             </p>
 
-            <p><a class="more-link" href="course.php">more</a></p>
+            <p><a class="more-link" href="EI203.php">more</a></p>
 
         </div>
 
         <div class="featured-post">
 
-            <h4><a href="course.php">[IS202]Project 1</a></h4>
-            <p class="post-info">Posted by <a href="course.php">erwin</a><br>due on 09/26/08 </p>
+            <h4><a href="EI203.php">[IS202]Project 1</a></h4>
+            <p class="post-info">Posted by <a href="EI203.php">erwin</a><br>due on 09/26/08 </p>
             <p>
                 Vestibulum venenatis. Nulla vel ipsum. Proin rutrum, urna sit
             </p>
 
-            <p><a class="more-link" href="course.php">more</a></p>
+            <p><a class="more-link" href="EI203.php">more</a></p>
 
         </div>
 
@@ -138,22 +159,25 @@
         <div class="featured-post">
             <div class="featured-post">
 
-                <h4><a href="course.php">Discussion</a></h4>
+                <h4><a href="EI203.php">Discussion</a></h4>
                 <p class="post-info">due on 09/26/08 </p>
                 <p>
                     Vestibulum venenatis. Nulla vel ipsum. Proin rutrum, urna sit
                 </p>
 
-                <p><a class="more-link" href="course.php">more</a></p>
+                <p><a class="more-link" href="EI203.php">more</a></p>
 
             </div>
         </div>
+
+
 
         <!-- end left-columns -->
     </div>
 
     <!-- contents end here -->
 </div></div>
+
 
 <div id="footer-bottom">
 
