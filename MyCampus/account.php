@@ -53,6 +53,7 @@ mysqli_select_db($conn,$dbname)or die("数据库访问错误");
                 <li><a href="assignments.php">assignments</a></li>
                 <li><a href="http://mail.sjtu.edu.cn">inbox</a></li>
                 <li id="current"><a href="account.php">account</a></li>
+                <li><a href="help.html">help</a></li>
             </ul>
         </div>
 
