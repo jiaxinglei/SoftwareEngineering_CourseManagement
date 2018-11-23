@@ -36,7 +36,7 @@ $dbname = "login";
     <meta name="googlebot" content="noarchive" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
-    <link href="css/zzsc.css" rel="stylesheet" type="text/css" />
+
     <script src="js/jquery2.min.js" type=""></script>
     <script src="js/zzsc.js" type=""></script>
 
@@ -134,124 +134,6 @@ $dbname = "login";
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
             </p>
 
-            <!--下划线示范-->
-            <!--<p>
-         A <a href="mainpage.php">link</a>,
-            <acronym title="this really isn't a very good description">acronym</acronym>,
-            <strong>strong text</strong> and
-            <del>deleted text</del>.
-         </p>
-         -->
-
-            <!--一些格式的示范-->
-            <!--
-            <h3>Code</h3>
-            <p><code>
-            code-sample { <br />
-            font-weight: bold;<br />
-            font-style: italic;<br />
-            }
-            </code></p>
-
-            <h3>Example Lists</h3>
-
-            <ol>
-                <li>Here is an example</li>
-                <li>of an ordered list</li>
-            </ol>
-
-            <ul>
-                <li>Here is an example</li>
-                <li>of an unordered list</li>
-            </ul>
-
-            <dl>
-            <dt>Definition title</dt>
-            <dd>Definition description</dd>
-            <dt>Definition title</dt>
-            <dd>Definition description</dd>
-         </dl>
-
-            <h3>Blockquote</h3>
-
-            <blockquote>
-            <p>Beauty of style and harmony and grace and good rhythm
-            depends on simplicity.</p>
-            <p class="align-right"> - Plato</p>
-            </blockquote>
-
-            <h3>Headers</h3>
-
-            <h1>H1 Heading</h1>
-            <h2>H2 Heading</h2>
-            <h3>H3 Heading</h3>
-            <h4>H4 Heading</h4>
-
-            <h3>Tabular Data</h3>
-            <table>
-                <tr>
-                    <th><strong>post</strong> date</th>
-                    <th>title</th>
-                    <th>description</th>
-                </tr>
-                <tr>
-                    <td>04.18.2008</td>
-                    <td>Augue non nibh</td>
-                    <td>Commodo <a href="course.php">metus</a> vestibulum hdhdh djdjdj djdjdj</td>
-                </tr>
-                <tr class="altrow">
-                    <td>04.18.2008</td>
-                    <td>Fusce ut diam</td>
-                    <td>Purus in eget odio in sapien</td>
-                </tr>
-                <tr>
-                    <td>04.18.2008</td>
-                    <td>Augue non nibh</td>
-                    <td>Adipiscing blandit </td>
-                </tr>
-                <tr class="altrow">
-                    <td>04.18.2008</td>
-                    <td>Sed vestibulum</td>
-                    <td>Cras <a href="course.php">lobortis</a> commodo </td>
-                </tr>
-            </table>
-
-            <h3>Contact Form</h3>
-
-            <form action="course.php" method="get" id="contactform">
-
-                <p>Send me a message</p>
-
-                <p>
-                    <label for="subject">Subject</label><br />
-                 <select id="subject" name="subject" tabindex="1">
-                       <option value="1">Option One</option>
-                      <option value="2">Option Two</option>
-                       <option value="3">Option Three</option>
-                 </select>
-                </p>
-
-                <p>
-                    <label for="name">Your Name</label><br />
-                    <input id="name" name="name" value="Your Name" type="text" tabindex="2" />
-                </p>
-
-                <p>
-                    <label for="email">Your Email Address</label><br />
-                    <input id="email" name="email" value="Your Email" type="text" tabindex="3" />
-                </p>
-
-                <p>
-                    <label for="message">Your Message</label><br />
-                    <textarea id="message" name="message" rows="10" cols="20" tabindex="4"></textarea>
-                </p>
-
-                <p class="no-border">
-                    <input class="button" type="submit" value="Submit" tabindex="5" />
-                 <input class="button" type="reset" value="Reset" tabindex="6" />
-                </p>
-
-            </form>
 
         <!-- main ends -->
         </div>
@@ -313,7 +195,14 @@ $dbname = "login";
 
         <!-- contents end here -->
     </div></div>
+
+
+<head>
+    <link href="css/zzsc.css" rel="stylesheet" type="text/css" />
+</head>
+
 <a href=" " class="cd-top">Top</a>
+
 <div id="footer-bottom">
 
     <p class="bottom-left">
