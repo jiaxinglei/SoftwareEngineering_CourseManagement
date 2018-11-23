@@ -1,4 +1,6 @@
-/* -------------------------------- 
+
+
+/* --------------------------------
 
 Primary style
 
@@ -12,13 +14,6 @@ html * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-body {
-  font-size: 100%;
-  font-family: "Bitter", sans-serif;
-  color: #6cbf81;
-  background-color: rgba(108, 191, 129, 0.61);
 }
 
 a {
