@@ -1,4 +1,17 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Jia Xinglei
+ * Date: 17/10/2018
+ * Time: 15:48
+ */
+
+$servername = "localhost";  //此处需填写正确的服务器名称
+$username = "root";  //此处需填写正确的用户名
+$password = "root";  //此处需填写正确的密码
+$dbname = "login";
+?>
+<?php
     $conn=mysqli_connect($servername,$username,$password);
     if(! $conn)
     {
@@ -23,10 +36,13 @@
     <meta name="googlebot" content="noarchive" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+    <link href="css/zzsc.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery2.min.js" type=""></script>
+    <script src="js/zzsc.js" type=""></script>
 
 </head>
 <body>
-
+<a href=" " class="cd-top">Top</a >
 <!-- header starts-->
 <div id="header-wrap"><div id="header" class="container_16">
 
@@ -46,8 +62,6 @@
 
     <div id="header-image"></div>
 
-
-
     <!-- header ends here -->
 </div></div>
 
@@ -55,7 +69,6 @@
 
 <div id="content-outer"><div id="content-wrapper" class="container_16">
 
-    <!-- left-columns starts -->
     <!-- left-columns starts -->
     <div id="left-columns" class="grid_4 alpha">
 
@@ -83,77 +96,36 @@
 
     </div>
     <!-- content starts -->
-    <!-- content starts -->
 
     <!-- main -->
-    <div id="main" class="grid_8">
+
+        <head>
+            <meta charset="UTF-8">
+<!--            <title>一款清新的jQuery日历插件DEMO演示</title>-->
+            <link rel="stylesheet" href="css/calendar.css">
+        </head>
+    <div id="main" class="grid_12">
+
 
         <h3>CLASS TABLE</h3>
         <h4>choose a course from the left column.</h4>
 
+        <div id="calendar" class="calendar"></div>
 
+        <script src="js/jquery.min.js"></script>
+        <script src="js/calendar.js"></script>
 
-
-
+        <div style="text-align:center;clear:both">
+            <script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+            <script src="/follow.js" type="text/javascript"></script>
+        </div>
 
     <!-- main ends -->
     </div>
 
-
-    <!-- right-columns starts -->
-    <!-- right-columns starts -->
-    <div id="right-columns" class="grid_4 omega">
-
-        <h3>To-Do List</h3>
-
-        <div class="featured-post">
-
-            <h4><a href="course.php">[CS101]Homework 2</a></h4>
-            <p class="post-info">Posted by <a href="course.php">erwin</a><br>due on 09/26/08 </p>
-            <p>
-                <a href="http://getfirefox.com/"></a>
-                Vestibulum venenatis. Nulla vel ipsum. Proin rutrum, urna sit
-            </p>
-
-            <p><a class="more-link" href="course.php">more</a></p>
-
-        </div>
-
-        <div class="featured-post">
-
-            <h4><a href="course.php">[IS202]Project 1</a></h4>
-            <p class="post-info">Posted by <a href="course.php">erwin</a><br>due on 09/26/08 </p>
-            <p>
-                Vestibulum venenatis. Nulla vel ipsum. Proin rutrum, urna sit
-            </p>
-
-            <p><a class="more-link" href="course.php">more</a></p>
-
-        </div>
-
-
-
-        <h3>Coming Up</h3>
-
-        <div class="featured-post">
-            <div class="featured-post">
-
-                <h4><a href="course.php">Discussion</a></h4>
-                <p class="post-info">due on 09/26/08 </p>
-                <p>
-                    Vestibulum venenatis. Nulla vel ipsum. Proin rutrum, urna sit
-                </p>
-
-                <p><a class="more-link" href="course.php">more</a></p>
-
-            </div>
-        </div>
-
-        <!-- end left-columns -->
     </div>
-
     <!-- contents end here -->
-</div></div>
+</div>
 
 <div id="footer-bottom">
 
@@ -170,7 +142,7 @@
     </script>
     <p class="bottom-right" >
         <a href="mainpage.php">Home</a> |
-        <a href="help.php">Help</a> |
+        <a href="help.html">Help</a> |
         <a onclick="showemail()">Contact us</a>
     </p>
 
@@ -180,5 +152,4 @@
 <!-- footer ends here -->
 
 </body>
-</html>
 </html>

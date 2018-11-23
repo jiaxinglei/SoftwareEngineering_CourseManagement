@@ -1,4 +1,17 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Jia Xinglei
+ * Date: 17/10/2018
+ * Time: 15:48
+ */
+
+$servername = "localhost";  //此处需填写正确的服务器名称
+$username = "root";  //此处需填写正确的用户名
+$password = "root";  //此处需填写正确的密码
+$dbname = "login";
+?>
+<?php
     $conn=mysqli_connect($servername,$username,$password);
     if(! $conn)
     {
@@ -23,6 +36,9 @@
     <meta name="googlebot" content="noarchive" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+    <link href="css/zzsc.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery2.min.js" type=""></script>
+    <script src="js/zzsc.js" type=""></script>
 
 </head>
 <body>
@@ -55,8 +71,6 @@
 
 <div id="content-outer"><div id="content-wrapper" class="container_16">
 
-
-
         <!-- left-columns starts -->
         <!-- left-columns starts -->
         <div id="left-columns" class="grid_4 alpha">
@@ -64,14 +78,6 @@
             <div class="sidemenu">
                 <h3>Courses</h3>
                 <ul>
-                    <!--
-                    <li><a href="course.php">[EI203] Circut Theory</a></li>
-                    <li><a href="course.php#TemplateInfo">[CS048] C++ Programming</a></li>
-                    <li><a href="mainpage.php">[SE407] Software Engeneering</a></li>
-                    <li><a href="assignments.php">[MA097] Mathematical Methods in Physics</a></li>
-                    <li><a href="http://www.styleshout.com/">[PH002] Physics II</a></li>
-                    <li><a href="http://www.4templates.com/?aff=ealigam">[IS225] Data Structure and Algorithms</a></li>
-                    -->
 
                     <?php
                     $sql = "select * from course_tbl ";
@@ -88,33 +94,6 @@
                 </ul>
             </div>
 
-            <!--
-            <div class="sidemenu">
-                <h3>Sponsors</h3>
-                <ul>
-                    <li><a href="http://themeforest.net?ref=ealigam">ThemeForest <br /><span>Your Choice for Site Templates, Wordpress, Joomla and CMS Themes</span></a></li>
-                    <li><a href="http://www.4templates.com/?aff=ealigam">4templates <br /><span>Low Cost Hi-Quality Templates</span></a></li>
-                    <li><a href="http://store.templatemonster.com?aff=ealigam">TemplateMonster <br /><span>Delivering the Best Templates on the Net!</span></a></li>
-                    <li><a href="http://tinyurl.com/3cgv2m">Text Link Ads <br /><span>Monetized your website</span></a></li>
-                    <li><a href="http://www.fotolia.com/partner/114283">Fotolia <br /><span>Free stock images or from $1</span></a> </li>
-                    <li><a href="http://www.dreamhost.com/r.cgi?287326">Dreamhost <br /><span>Premium webhosting</span></a></li>
-                </ul>
-            </div>
-
-            <h3>Wise Words</h3>
-            <p>
-            &quot;Beauty of style and harmony and grace and good rhythm
-            depends on simplicity.&quot; </p>
-
-            <p class="align-right"> - Plato</p>
-
-            <h3>Support Styleshout</h3>
-            <p>
-            If you are interested in supporting my work and would like to contribute, you are
-            welcome to make a small donation through the
-            <a href="http://www.styleshout.com/">donate link</a> on my website - it will
-            be a great help and will surely be appreciated.</p>
-            -->
         </div>
 
 
@@ -334,6 +313,7 @@
 
         <!-- contents end here -->
     </div></div>
+<a href=" " class="cd-top">Top</a>
 <div id="footer-bottom">
 
     <p class="bottom-left">
@@ -349,7 +329,7 @@
     </script>
     <p class="bottom-right" >
         <a href="mainpage.php">Home</a> |
-        <a href="help.php">Help</a> |
+        <a href="help.html">Help</a> |
         <a onclick="showemail()">Contact us</a>
     </p>
 

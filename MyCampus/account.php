@@ -1,3 +1,24 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Jia Xinglei
+ * Date: 17/10/2018
+ * Time: 15:48
+ */
+
+$servername = "localhost";  //此处需填写正确的服务器名称
+$username = "root";  //此处需填写正确的用户名
+$password = "root";  //此处需填写正确的密码
+$dbname = "login";
+?>
+<?php
+$conn=mysqli_connect($servername,$username,$password);
+if(! $conn)
+{
+    die ('connect error:'.mysqli_error($conn));
+}
+mysqli_select_db($conn,$dbname)or die("数据库访问错误");
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">

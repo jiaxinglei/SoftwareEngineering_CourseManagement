@@ -14,10 +14,13 @@
 <meta name="googlebot" content="noarchive" />
 
 <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+    <link href="css/zzsc.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery2.min.js" type=""></script>
+    <script src="js/zzsc.js" type=""></script>
 
 </head>
 <body>
-
+<a href=" " class="cd-top">Top</a>
 	<!-- header starts-->
 	<div id="header-wrap"><div id="header" class="container_16">			
 				
@@ -58,27 +61,11 @@
 				<div class="sidemenu">
 					<h3>Sidebar Menu</h3>
 					<ul>
-						<li><a href="course.php">Home</a></li>
-						<li><a href="course.php#TemplateInfo">TemplateInfo</a></li>
-						<li><a href="mainpage.php">Style Demo</a></li>
-						<li><a href="assignments.php">Blog</a></li>
-						<li><a href="http://www.styleshout.com/">More Free Templates</a></li>
-						<li><a href="http://www.4templates.com/?aff=ealigam">Premium Templates</a></li>
+						<li><a href="course.php">Assignments</a></li>
+						<li><a href="course.php#TemplateInfo">Grade</a></li>
 					</ul>
 				</div>
 
-                <!--
-				<div class="sidemenu">
-					<h3>Links</h3>
-					<ul>
-						<li><a href="http://www.PDPhoto.org/">PDPhoto</a></li>
-						<li><a href="http://www.alistapart.com">Alistapart</a></li>
-						<li><a href="http://960.gs/">960 Grid System</a></li>
-						<li><a href="http://www.freephotos.se/">FreePhotos.se</a></li>
-					</ul>
-				</div>
-
-				-->
 
 			</div>
 
@@ -209,7 +196,7 @@
         </script>
         <p class="bottom-right" >
             <a href="mainpage.php">Home</a> |
-            <a href="help.php">Help</a> |
+            <a href="help.html">Help</a> |
             <a onclick="showemail()">Contact us</a>
         </p>
 

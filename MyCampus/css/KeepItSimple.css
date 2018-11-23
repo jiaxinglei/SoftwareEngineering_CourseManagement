@@ -184,14 +184,14 @@ input.button {
 }
 #content-wrapper {
 	margin: 0 auto;	
-	background: #fff url(../images/content-bg.gif) repeat-y center top;	
+	/*background: #fff url(../images/content-bg.gif) repeat-y center top;	*/
 	padding-bottom: 35px;
 	padding-top: 5px;		
 	overflow: auto;
 }
 #header-wrap {
 	width: 100%;
-	background: #fff url(../images/bg.gif) repeat-x ;	
+	/*background: #fff url(../images/bg.gif) repeat-x ;	*/
 	margin: 0; padding: 0; 
 }
 #header {
@@ -548,5 +548,3 @@ ol.commentlist {
 	height:0; 
 	content: "."; 
 }
-
-

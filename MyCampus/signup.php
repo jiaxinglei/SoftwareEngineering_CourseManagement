@@ -50,7 +50,26 @@
 </form>
 
 </body>
+<div id="footer-bottom">
 
+    <p class="bottom-left">
+        &nbsp; &copy;2018 All copyright:
+        Design by MYCAMPUS team
+    </p>
+
+    <script>
+        function showemail(){
+            alert('Contact us at: ' +
+                'mycampus@sjtu.edu.cn')
+        }
+    </script>
+    <p class="bottom-right" >
+        <a href="mainpage.php">Home</a> |
+        <a href="help.php">Help</a> |
+        <a onclick="showemail()">Contact us</a>
+    </p>
+
+</div>
 
 </html>
 

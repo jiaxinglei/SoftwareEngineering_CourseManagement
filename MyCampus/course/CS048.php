@@ -1,4 +1,17 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Jia Xinglei
+ * Date: 17/10/2018
+ * Time: 15:48
+ */
+
+$servername = "localhost";  //此处需填写正确的服务器名称
+$username = "root";  //此处需填写正确的用户名
+$password = "root";  //此处需填写正确的密码
+$dbname = "login";
+?>
+<?php
         $conn=mysqli_connect($servername,$username,$password);
         if(! $conn)
         {
@@ -24,10 +37,13 @@
     <meta name="googlebot" content="noarchive" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css" />
+    <link href="../css/zzsc.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery2.min.js" type=""></script>
+    <script src="../js/zzsc.js" type=""></script>
 
 </head>
 <body>
-
+<a href=" " class="cd-top">Top</a >
 <!-- header starts-->
 <div id="header-wrap"><div id="header" class="container_16">
 
@@ -38,7 +54,7 @@
     <div  id="nav">
         <ul>
             <li><a href="../mainpage.php">Home</a></li>
-            <li id ="current"><a href="EI203.php">courses</a></li>
+            <li id ="current"><a href="../course.php">courses</a></li>
             <li><a href="../assignments.php">assignments</a></li>
             <li><a href="http://mail.sjtu.edu.cn">inbox</a></li>
             <li><a href="../account.php">account</a></li>
