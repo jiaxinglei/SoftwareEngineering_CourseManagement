@@ -32,6 +32,7 @@
                 <li><a href="assignments.php">assignments</a></li>
                 <li><a href="http://mail.sjtu.edu.cn">inbox</a></li>
                 <li id="current"><a href="account.php">account</a></li>
+                <li><a href="help.html">help</a></li>
             </ul>
         </div>
 
