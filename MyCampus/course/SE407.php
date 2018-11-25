@@ -8,8 +8,13 @@
 
 $servername = "localhost";  //此处需填写正确的服务器名称
 $username = "root";  //此处需填写正确的用户名
+<<<<<<< HEAD
 $password = "";  //此处需填写正确的密码
 $dbname = "course";
+=======
+$password = "root";  //此处需填写正确的密码
+$dbname = "login";
+>>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
 ?>
 <?php
     $conn=mysqli_connect($servername,$username,$password);

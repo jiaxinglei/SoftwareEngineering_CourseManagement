@@ -81,10 +81,17 @@
  * Time: 15:48
  */
 
+<<<<<<< HEAD
 $servername = "localhost";  //此处需填写正确的服务器名称
 $username = "root";  //此处需填写正确的用户名
 $password = "jiaXINGlei123";  //此处需填写正确的密码
 $dbname = "course_info";
+=======
+$servername = "";  //此处需填写正确的服务器名称
+$username = "";  //此处需填写正确的用户名
+$password = "";  //此处需填写正确的密码
+$dbname = "stu_info";
+>>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
 ?>
 
 <?php

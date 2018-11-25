@@ -8,11 +8,19 @@
 
 $servername = "localhost";  //此处需填写正确的服务器名称
 $username = "root";  //此处需填写正确的用户名
+<<<<<<< HEAD
 $password = "";  //此处需填写正确的密码
 $dbname = "course_info";
 ?>
 <?php
     $conn = new mysqli($servername, $username, $password, $dbname);
+=======
+$password = "root";  //此处需填写正确的密码
+$dbname = "login";
+?>
+<?php
+    $conn=mysqli_connect($servername,$username,$password);
+>>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
     if(! $conn)
     {
         die ('connect error:'.mysqli_error($conn));
@@ -56,7 +64,11 @@ $dbname = "course_info";
                 <li><a href="course.php">courses</a></li>
                 <li><a href="assignments.php">assignments</a></li>
                 <li><a href="http://mail.sjtu.edu.cn">inbox</a></li>
+<<<<<<< HEAD
                 <li><a href="account_bg.php">account</a></li>
+=======
+                <li><a href="account.php">account</a></li>
+>>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
                 <li><a href="help.html">help</a></li>
             </ul>
         </div>
@@ -81,6 +93,7 @@ $dbname = "course_info";
                 <ul>
 
                     <?php
+<<<<<<< HEAD
                     session_start();
                     $major=$_SESSION["major"];
                     $sql = "select * from major where (major='$major')";
@@ -130,6 +143,17 @@ $dbname = "course_info";
                     $rows = mysqli_fetch_array($result);
                     $courseName=$rows["courseName"];
                         echo "<li><a href='course/courseInfo.php?id=$courseId'>[" . $courseId . "] " . $courseName . "</a></li>";
+=======
+                    $sql = "select * from course_tbl ";
+                    $result=mysqli_query($conn,$sql);
+                    $num = mysqli_num_rows($result);
+                    for($i=0;$i<$num;$i++){
+                        $row = mysqli_fetch_array($result);
+                        $courseName=$row["courseName"];
+                        $courseId=$row["courseId"];
+                        echo "<li><a href='course/$courseId.php'>[".$courseId."] ".$courseName."</a></li>";
+                    }
+>>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
                     ?>
 
                 </ul>

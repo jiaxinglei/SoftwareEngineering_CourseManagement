@@ -8,8 +8,13 @@
 
 $servername = "localhost";  //此处需填写正确的服务器名称
 $username = "root";  //此处需填写正确的用户名
+<<<<<<< HEAD
 $password = "";  //此处需填写正确的密码
 $dbname = "stu_info";
+=======
+$password = "root";  //此处需填写正确的密码
+$dbname = "login";
+>>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
 ?>
 <?php
 $conn=mysqli_connect($servername,$username,$password);
@@ -79,7 +84,11 @@ mysqli_select_db($conn,$dbname)or die("数据库访问错误");
             <!--此处需要导入学生信息-->
             <?php
                 session_start();
+<<<<<<< HEAD
                 echo "<h4>Name:  {$_SESSION['name']}<h4>";
+=======
+                echo "<h4>Name: {$_SESSION['name']}<h4>";
+>>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
                 echo "<h4>Student Number: {$_SESSION['stu_id']}</h4>";
                 echo "<h4>Academy: {$_SESSION['school']}</h4>";
                 echo "<h4>Major: {$_SESSION['major']}</h4>";

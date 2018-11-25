@@ -8,8 +8,13 @@
 
 $servername = "localhost";  //此处需填写正确的服务器名称
 $username = "root";  //此处需填写正确的用户名
+<<<<<<< HEAD
 $password = "";  //此处需填写正确的密码
 $dbname = "course_info";
+=======
+$password = "root";  //此处需填写正确的密码
+$dbname = "login";
+>>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
 ?>
 <?php
     $conn=mysqli_connect($servername,$username,$password);
@@ -81,6 +86,7 @@ $dbname = "course_info";
 
                 <!--courses 从数据库导入-->
                 <?php
+<<<<<<< HEAD
                 session_start();
                 $major=$_SESSION["major"];
                 $sql = "select * from major where (major='$major')";
@@ -130,6 +136,17 @@ $dbname = "course_info";
                 $rows = mysqli_fetch_array($result);
                 $courseName=$rows["courseName"];
                 echo "<li><a href='course/courseInfo.php?id=$courseId'>[" . $courseId . "] " . $courseName . "</a></li>";
+=======
+                    $sql = "select * from course_tbl ";
+                    $result=mysqli_query($conn,$sql);
+                    $num = mysqli_num_rows($result);
+                    for($i=0;$i<$num;$i++){
+                        $row = mysqli_fetch_array($result);
+                        $courseName=$row["courseName"];
+                        $courseId=$row["courseId"];
+                        echo "<li><a href='course/$courseId.php'>[".$courseId."] ".$courseName."</a></li>";
+                    }
+>>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
                 ?>
 
             </ul>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 $host="localhost";
 $user="root";
@@ -29,6 +30,8 @@ $time=time();
 ?>
 
 
+=======
+>>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -107,10 +110,13 @@ $time=time();
 		</div>
 		<!-- main -->
 		<div id="main" class="grid_8">
+<<<<<<< HEAD
             <style>
                 .comment-data1 {color:red;font-style:italic;font-weight: bold;font-size:15px;}
                 .comment-data2 {color:black;font-style:normal;font-weight:normal;font-size:15px;}
             </style>
+=======
+>>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
 
 			<h3 id="comments">upcoming assignment</h3>
 
@@ -118,6 +124,7 @@ $time=time();
 
 				<li class="alt" id="comment-63">
 
+<<<<<<< HEAD
                     <cite>
                         <span class="comment-data1">
                             <?php echo $rows[0]['courseName']; echo ":<br>";  ?>
@@ -130,11 +137,23 @@ $time=time();
                     <div class="comment-text">
                         <p><?php  echo date('Y-m-d H:i:s',1542139745)?></p>
                     </div>
+=======
+					<cite>
+						<!--<img alt="" src="images/gravatar.jpg" class="avatar" height="40" width="40" />			-->
+						<a href="course.php">Cloud Computing Technology</a> Chao Li <br />
+						<span class="comment-data"><a href="#comment-63" title="">July 20th, 2019 at 8:08 am</a> </span>
+					</cite>
+
+					<div class="comment-text">
+						<p>Apache Spark program</p>
+					</div>
+>>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
 
 				</li>
 
 				<li id="comment-67">
 
+<<<<<<< HEAD
                     <cite>
                         <span class="comment-data1">
                             <?php echo $rows[1]['courseName']; echo ":<br>";  ?>
@@ -147,11 +166,23 @@ $time=time();
                     <div class="comment-text">
                         <p><?php  echo date('Y-m-d H:i:s',1541939745)?></p>
                     </div>
+=======
+					<cite>
+						<!--<img alt="" src="images/gravatar.jpg" class="avatar" height="40" width="40" />			-->
+						<a href="course.php">Cloud Computing Technology</a> Chao Li <br />
+						<span class="comment-data"><a href="#comment-63" title="">July 20th, 2019 at 8:08 am</a> </span>
+					</cite>
+
+					<div class="comment-text">
+						<p>Apache Spark program</p>
+					</div>
+>>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
 
 				</li>
 
 				<li class="alt" id="comment-71">
 
+<<<<<<< HEAD
                     <cite>
                         <span class="comment-data1">
                             <?php echo $rows[4]['courseName']; echo ":<br>";  ?>
@@ -164,6 +195,17 @@ $time=time();
                     <div class="comment-text">
                         <p><?php  echo date('Y-m-d H:i:s',1541839745  )?></p>
                     </div>
+=======
+					<cite>
+						<!--<img alt="" src="images/gravatar.jpg" class="avatar" height="40" width="40" />			-->
+						<a href="course.php">Cloud Computing Technology</a> Chao Li <br />
+						<span class="comment-data"><a href="#comment-63" title="">July 20th, 2019 at 8:08 am</a> </span>
+					</cite>
+
+					<div class="comment-text">
+						<p>Apache Spark program</p>
+					</div>
+>>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
 
 				</li>
 
@@ -175,6 +217,7 @@ $time=time();
 
 				<li class="alt" id="comment-80">
 
+<<<<<<< HEAD
                     <cite>
                         <span class="comment-data1">
                             <?php echo $rows[5]['courseName']; echo ":<br>";  ?>
@@ -187,11 +230,23 @@ $time=time();
                     <div class="comment-text">
                         <p><?php  echo date('Y-m-d H:i:s',1541735745)?></p>
                     </div>
+=======
+					<cite>
+						<!--<img alt="" src="images/gravatar.jpg" class="avatar" height="40" width="40" />			-->
+						<a href="course.php">Cloud Computing Technology</a> Chao Li <br />
+						<span class="comment-data"><a href="#comment-63" title="">July 20th, 2019 at 8:08 am</a> </span>
+					</cite>
+
+					<div class="comment-text">
+						<p>Apache Spark program</p>
+					</div>
+>>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
 
 				</li>
 
 				<li id="comment-81">
 
+<<<<<<< HEAD
                     <cite>
                         <span class="comment-data1">
                             <?php echo $rows[6]['courseName']; echo ":<br>";  ?>
@@ -204,10 +259,23 @@ $time=time();
                     <div class="comment-text">
                         <p><?php  echo date('Y-m-d H:i:s',1541539789)?></p>
                     </div>
+=======
+					<cite>
+						<!--<img alt="" src="images/gravatar.jpg" class="avatar" height="40" width="40" />			-->
+						<a href="course.php">Cloud Computing Technology</a> Chao Li <br />
+						<span class="comment-data"><a href="#comment-63" title="">July 20th, 2019 at 8:08 am</a> </span>
+					</cite>
+
+					<div class="comment-text">
+						<p>Apache Spark program</p>
+					</div>
+
+>>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
 				</li>
 
 				<li class="alt" id="comment-82">
 
+<<<<<<< HEAD
                     <cite>
                         <span class="comment-data1">
                             <?php echo $rows[7]['courseName']; echo ":<br>";  ?>
@@ -222,6 +290,19 @@ $time=time();
                     </div>
 
                 </li>
+=======
+					<cite>
+						<!--<img alt="" src="images/gravatar.jpg" class="avatar" height="40" width="40" />			-->
+						<a href="course.php">Cloud Computing Technology</a> Chao Li <br />
+						<span class="comment-data"><a href="#comment-63" title="">July 20th, 2019 at 8:08 am</a> </span>
+					</cite>
+
+					<div class="comment-text">
+						<p>Apache Spark program</p>
+					</div>
+
+				</li>
+>>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
 
 			</ol>
 
