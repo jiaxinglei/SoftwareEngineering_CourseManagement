@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9fd04c6e-0205-4ef8-a976-e89a0ca7381e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCampus/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/MyCampus/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCampus/assignments.html" beforeDir="false" afterPath="$PROJECT_DIR$/MyCampus/assignments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCampus/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/MyCampus/course.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCampus/css/960.css" beforeDir="false" afterPath="$PROJECT_DIR$/MyCampus/css/960.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCampus/css/KeepItSimple.css" beforeDir="false" afterPath="$PROJECT_DIR$/MyCampus/css/KeepItSimple.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCampus/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/MyCampus/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCampus/css/screen.css" beforeDir="false" afterPath="$PROJECT_DIR$/MyCampus/css/screen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCampus/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/MyCampus/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCampus/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/MyCampus/mainpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="course_info@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="course_info@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="course_info@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="course_info: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="course_info@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="course_info: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="course_det: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="course_info@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="course_info: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="major: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="stu_info@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="stu_info@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="stu_info@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="stu_info: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="stu_info@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="stu_info: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="login_tbl: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyCampus/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="assignments.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyCampus/assignments.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="course.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyCampus/course.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1348">
+              <caret line="132" column="18" selection-start-line="132" selection-start-column="18" selection-end-line="132" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="courseInfo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyCampus/course/courseInfo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="104" column="39" selection-start-line="104" selection-start-column="39" selection-end-line="104" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="course_det" pinned="false" current-in-tab="false">
+        <entry file="das://209a6418-7c61-4f6a-aa0d-7bd3b9591e5b/schema/course_info/table/course_det">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyCampus/account.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="major" pinned="false" current-in-tab="true">
+        <entry file="das://209a6418-7c61-4f6a-aa0d-7bd3b9591e5b/schema/course_info/table/major">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="course_tbl" pinned="false" current-in-tab="false">
+        <entry file="das://209a6418-7c61-4f6a-aa0d-7bd3b9591e5b/schema/course_info/table/course_tbl">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account_bg.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyCampus/account_bg.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="19" column="5" selection-start-line="16" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainpage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyCampus/mainpage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1330">
+              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+              <folding>
+                <element signature="e#6#93#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/logincheck.php" />
+        <option value="C:/PHP/php.ini" />
+        <option value="$PROJECT_DIR$/MyCampus/login.html" />
+        <option value="$PROJECT_DIR$/MyCampus/register.php" />
+        <option value="$PROJECT_DIR$/MyCampus/account.html" />
+        <option value="$PROJECT_DIR$/MyCampus/test.php" />
+        <option value="$PROJECT_DIR$/MyCampus/mainpage.html" />
+        <option value="$PROJECT_DIR$/MyCampus/course/EI203.php" />
+        <option value="$PROJECT_DIR$/MyCampus/course/PH002.php" />
+        <option value="$PROJECT_DIR$/MyCampus/course/SE407.php" />
+        <option value="$PROJECT_DIR$/MyCampus/course/CS048.php" />
+        <option value="$PROJECT_DIR$/MyCampus/courseInfo.php" />
+        <option value="$PROJECT_DIR$/MyCampus/account.php" />
+        <option value="$PROJECT_DIR$/MyCampus/account_bg.php" />
+        <option value="$PROJECT_DIR$/MyCampus/signup.php" />
+        <option value="$PROJECT_DIR$/MyCampus/logincheck.php" />
+        <option value="$PROJECT_DIR$/MyCampus/mainpage.php" />
+        <option value="$PROJECT_DIR$/MyCampus/course.php" />
+        <option value="$PROJECT_DIR$/MyCampus/course/courseInfo.php" />
+        <option value="$PROJECT_DIR$/MyCampus/assignments.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="585" />
+    <option name="y" value="25" />
+    <option name="width" value="1250" />
+    <option name="height" value="985" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SoftwareEngineering_CourseManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SoftwareEngineering_CourseManagement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SoftwareEngineering_CourseManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SoftwareEngineering_CourseManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="MyCampus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SoftwareEngineering_CourseManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SoftwareEngineering_CourseManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="MyCampus" type="462c0819:PsiDirectoryNode" />
+              <item name="course" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;Azure (Microsoft)" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\SoftwareEngineering_CourseManagement\MyCampus\course" />
+      <recent name="C:\Users\JIA12\PhpstormProjects\SoftwareEngineering_CourseManagement" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="logincheck.php " type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/MyCampus/logincheck.php">
+      <CommandLine workingDirectory="$PROJECT_DIR$/MyCampus" />
+      <option name="workingDirectory" value="C:\xampp\htdocs\SoftwareEngineering_CourseManagement\MyCampus" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.logincheck.php " />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9fd04c6e-0205-4ef8-a976-e89a0ca7381e" name="Default" comment="" />
+      <created>1539513574429</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539513574429</updated>
+      <workItem from="1539513575807" duration="3227000" />
+      <workItem from="1539669866641" duration="11227000" />
+      <workItem from="1539746967731" duration="8090000" />
+      <workItem from="1539784361337" duration="4506000" />
+      <workItem from="1539929759720" duration="268000" />
+      <workItem from="1539930057063" duration="4188000" />
+      <workItem from="1540280363054" duration="11714000" />
+      <workItem from="1540372076273" duration="2129000" />
+      <workItem from="1540456628036" duration="677000" />
+      <workItem from="1540459052622" duration="139000" />
+      <workItem from="1540459281403" duration="675000" />
+      <workItem from="1541402421218" duration="6000" />
+      <workItem from="1542535686942" duration="114000" />
+      <workItem from="1542535818520" duration="3009000" />
+      <workItem from="1542942776719" duration="29294000" />
+      <workItem from="1543121774735" duration="2836000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="82099000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50065106" side_tool="true" weight="0.3292517" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49934897" weight="0.33333334" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.3292517" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.110738255" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.20469798" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="2" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.3292517" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49934897" visible="true" weight="0.33333334" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10221354" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="0" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50065106" side_tool="true" weight="0.3292517" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.20507812" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/form.html" />
+    <entry file="file://$PROJECT_DIR$/logincheck.php" />
+    <entry file="file://$PROJECT_DIR$/README.md" />
+    <entry file="file://$PROJECT_DIR$/form.html" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2e5774a4-eb9e-449f-9517-8d88a89e827c/console.sql" />
+    <entry file="file://C:/PHP/php.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="874" column="1" selection-start-line="874" selection-start-column="1" selection-end-line="874" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logincheck.php" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/08f67365-9894-48e3-9c64-be20f67af27b/console.sql" />
+    <entry file="file://$PROJECT_DIR$/../logincheck.php" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dcc9f705-31b6-4197-bf28-fa7c759fedeb/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCampus/register.php" />
+    <entry file="file://$PROJECT_DIR$/MyCampus/test.php" />
+    <entry file="file://$PROJECT_DIR$/course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://dcc9f705-31b6-4197-bf28-fa7c759fedeb/schema/stu_info/table/stu_info" />
+    <entry file="das://dcc9f705-31b6-4197-bf28-fa7c759fedeb/schema/stu_info/table/user_info" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6db931f3-5855-4d14-8529-f3e827e5f57b/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://6db931f3-5855-4d14-8529-f3e827e5f57b/schema/course/table/login_tbl" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5d98a864-3b76-4e07-a0f9-9d1beaf8a626/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://6db931f3-5855-4d14-8529-f3e827e5f57b/schema/course/table/course_tbl" />
+    <entry file="file://$PROJECT_DIR$/MyCampus/help.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCampus/course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2014">
+          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCampus/course/CS048.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCampus/course/EI203.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1349">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCampus/course/SE407.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCampus/course/PH002.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="116" column="77" lean-forward="true" selection-start-line="116" selection-start-column="11" selection-end-line="116" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCampus/signup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1091">
+          <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/221cf4b7-d2ee-439d-9be0-d53a483bcfe3/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCampus/account.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://5d98a864-3b76-4e07-a0f9-9d1beaf8a626/schema/course_info/table/course_tbl/index/major" />
+    <entry file="das://5d98a864-3b76-4e07-a0f9-9d1beaf8a626/schema/course_info/table/major/index/cid1" />
+    <entry file="das://5d98a864-3b76-4e07-a0f9-9d1beaf8a626/schema/course_info/table/course_tbl" />
+    <entry file="das://5d98a864-3b76-4e07-a0f9-9d1beaf8a626/schema/course_info/table/course_det" />
+    <entry file="das://5d98a864-3b76-4e07-a0f9-9d1beaf8a626/schema/course_info/table/major" />
+    <entry file="file://$PROJECT_DIR$/MyCampus/mainpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1786">
+          <caret line="180" column="76" lean-forward="true" selection-start-line="180" selection-start-column="76" selection-end-line="180" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCampus/logincheck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCampus/assignments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2224e462-17f6-4087-939e-5b10afcb6172/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCampus/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2224e462-17f6-4087-939e-5b10afcb6172/schema/course_info/table/course_det">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/209a6418-7c61-4f6a-aa0d-7bd3b9591e5b/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://221cf4b7-d2ee-439d-9be0-d53a483bcfe3/schema/stu_info/table/login_tbl">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCampus/course/courseInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="104" column="39" selection-start-line="104" selection-start-column="39" selection-end-line="104" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCampus/mainpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1330">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="e#6#93#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCampus/account_bg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" column="5" selection-start-line="16" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCampus/account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCampus/assignments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCampus/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://209a6418-7c61-4f6a-aa0d-7bd3b9591e5b/schema/course_info/table/course_det">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://209a6418-7c61-4f6a-aa0d-7bd3b9591e5b/schema/course_info/table/course_tbl">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyCampus/course.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1348">
+          <caret line="132" column="18" selection-start-line="132" selection-start-column="18" selection-end-line="132" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://209a6418-7c61-4f6a-aa0d-7bd3b9591e5b/schema/course_info/table/major">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
