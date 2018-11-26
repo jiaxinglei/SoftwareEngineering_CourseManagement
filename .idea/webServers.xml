@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="70809d42-eeb2-4f52-a2cc-45fb6ed026f6" name="apache" url="https://localhost/">
+        <fileTransfer port="0" mountedRoot="C:\Apache24\htdocs" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
