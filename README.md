@@ -1,4 +1,10 @@
 # SoftwareEngineering_CourseManagement
+
+
+### 项目目的
+
+* 建立一个课程管理网站，帮助每个大学生管理好每个学期的课程，不遗漏任何一个重要的通知，不错过任何一个deadline。
+
 ### Login in/Login up
 
 * 第一次使用该网站时需要注册，注册需要提供id（用户名），密码，姓名，学号，学院，专业。
