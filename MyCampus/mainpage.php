@@ -8,25 +8,11 @@
 
 $servername = "localhost";  //此处需填写正确的服务器名称
 $username = "root";  //此处需填写正确的用户名
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> da5c0782449664ff72b16dfb886a10595415997b
 $password = "";  //此处需填写正确的密码
 $dbname = "course_info";
 ?>
 <?php
     $conn = new mysqli($servername, $username, $password, $dbname);
-<<<<<<< HEAD
-=======
-=======
-$password = "root";  //此处需填写正确的密码
-$dbname = "login";
-?>
-<?php
-    $conn=mysqli_connect($servername,$username,$password);
->>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
->>>>>>> da5c0782449664ff72b16dfb886a10595415997b
     if(! $conn)
     {
         die ('connect error:'.mysqli_error($conn));
@@ -70,15 +56,7 @@ $dbname = "login";
                 <li><a href="course.php">courses</a></li>
                 <li><a href="assignments.php">assignments</a></li>
                 <li><a href="http://mail.sjtu.edu.cn">inbox</a></li>
-<<<<<<< HEAD
                 <li><a href="account_bg.php">account</a></li>
-=======
-<<<<<<< HEAD
-                <li><a href="account_bg.php">account</a></li>
-=======
-                <li><a href="account.php">account</a></li>
->>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
->>>>>>> da5c0782449664ff72b16dfb886a10595415997b
                 <li><a href="help.html">help</a></li>
             </ul>
         </div>
@@ -103,10 +81,6 @@ $dbname = "login";
                 <ul>
 
                     <?php
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> da5c0782449664ff72b16dfb886a10595415997b
                     session_start();
                     $major=$_SESSION["major"];
                     $sql = "select * from major where (major='$major')";
@@ -156,20 +130,6 @@ $dbname = "login";
                     $rows = mysqli_fetch_array($result);
                     $courseName=$rows["courseName"];
                         echo "<li><a href='course/courseInfo.php?id=$courseId'>[" . $courseId . "] " . $courseName . "</a></li>";
-<<<<<<< HEAD
-=======
-=======
-                    $sql = "select * from course_tbl ";
-                    $result=mysqli_query($conn,$sql);
-                    $num = mysqli_num_rows($result);
-                    for($i=0;$i<$num;$i++){
-                        $row = mysqli_fetch_array($result);
-                        $courseName=$row["courseName"];
-                        $courseId=$row["courseId"];
-                        echo "<li><a href='course/$courseId.php'>[".$courseId."] ".$courseName."</a></li>";
-                    }
->>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
->>>>>>> da5c0782449664ff72b16dfb886a10595415997b
                     ?>
 
                 </ul>
@@ -183,7 +143,6 @@ $dbname = "login";
 
         <!-- main -->
         <div id="main" class="grid_8">
-<<<<<<< HEAD
             <?php
             $sql = "select * from info order by date DESC";
             $result=mysqli_query($conn,$sql);
@@ -210,15 +169,6 @@ $dbname = "login";
             ?>
 
 
-=======
-
-            <h3><a href="course.php">INFO 1</a></h3>
-
-            <p class="post-info">Posted by <a href="course.php">erwin</a> | Filed under <a href="course.php">templates</a>, <a href="course.php">internet</a>  </p>
-
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
-            </p>
->>>>>>> da5c0782449664ff72b16dfb886a10595415997b
 
             <!--
             <p class="postmeta">
@@ -228,26 +178,6 @@ $dbname = "login";
             </p>
             -->
 
-<<<<<<< HEAD
-=======
-            <h3><a href="course.php">INFO 2</a></h3>
-
-            <p class="post-info">Posted by <a href="course.php">erwin</a> | Filed under <a href="course.php">templates</a>, <a href="course.php">internet</a>  </p>
-
-            <p><a href="http://getfirefox.com/"></a>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
-            </p>
-
-            <h3><a href="course.php">INFO 3</a></h3>
-
-            <p class="post-info">Posted by <a href="course.php">erwin</a> | Filed under <a href="course.php">templates</a>, <a href="course.php">internet</a>  </p>
-
-            <p><a href="http://getfirefox.com/"></a>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
-            </p>
-
-
->>>>>>> da5c0782449664ff72b16dfb886a10595415997b
         <!-- main ends -->
         </div>
 
@@ -259,7 +189,6 @@ $dbname = "login";
             <h3>To-Do List</h3>
 
             <div class="featured-post">
-<<<<<<< HEAD
                 <?php
                     $sql="select * from assignments order by ddl ASC ";
                     $result=mysqli_query($conn,$sql);
@@ -275,48 +204,6 @@ $dbname = "login";
                     }
                 ?>
 
-=======
-
-                <h4><a href="course.php">[CS101]Homework 2</a></h4>
-                <p class="post-info">Posted by <a href="course.php">erwin</a><br>due on 09/26/08 </p>
-                <p>
-                    <a href="http://getfirefox.com/"></a>
-                    Vestibulum venenatis. Nulla vel ipsum. Proin rutrum, urna sit
-                </p>
-
-                <p><a class="more-link" href="course.php">more</a></p>
-
-            </div>
-
-            <div class="featured-post">
-
-                <h4><a href="course.php">[IS202]Project 1</a></h4>
-                <p class="post-info">Posted by <a href="course.php">erwin</a><br>due on 09/26/08 </p>
-                <p>
-                    Vestibulum venenatis. Nulla vel ipsum. Proin rutrum, urna sit
-                </p>
-
-                <p><a class="more-link" href="course.php">more</a></p>
-
-            </div>
-
-
-
-            <h3>Coming Up</h3>
-
-            <div class="featured-post">
-                <div class="featured-post">
-
-                    <h4><a href="course.php">Discussion</a></h4>
-                    <p class="post-info">due on 09/26/08 </p>
-                    <p>
-                        Vestibulum venenatis. Nulla vel ipsum. Proin rutrum, urna sit
-                    </p>
-
-                    <p><a class="more-link" href="course.php">more</a></p>
-
-                </div>
->>>>>>> da5c0782449664ff72b16dfb886a10595415997b
             </div>
 
 

@@ -29,7 +29,6 @@
         <property name="yearIsDateType" value="false" />
       </driver-properties>
     </data-source>
-<<<<<<< HEAD
     <data-source source="LOCAL" name="info@localhost" uuid="b4b6c0e7-fca0-4ae4-ba0c-0498370496cb">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
@@ -44,7 +43,5 @@
         <property name="yearIsDateType" value="false" />
       </driver-properties>
     </data-source>
-=======
->>>>>>> da5c0782449664ff72b16dfb886a10595415997b
   </component>
 </project>

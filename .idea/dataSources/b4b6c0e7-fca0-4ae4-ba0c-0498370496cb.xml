@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="course_info@localhost">
+<dataSource name="info@localhost">
   <database-model serializer="dbm" rdbms="MYSQL" format-version="4.9">
     <root id="1">
       <ServerVersion>5.5.5</ServerVersion>
@@ -9,11 +9,11 @@
       <DefaultCasing>lower/lower</DefaultCasing>
     </root>
     <schema id="2" parent="1" name="course_info">
-      <Current>1</Current>
-      <Visible>1</Visible>
       <Collation>latin1_swedish_ci</Collation>
     </schema>
     <schema id="3" parent="1" name="info">
+      <Current>1</Current>
+      <Visible>1</Visible>
       <Collation>latin1_swedish_ci</Collation>
     </schema>
     <schema id="4" parent="1" name="information_schema">
@@ -967,163 +967,125 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="243" parent="2" name="assignments"/>
-    <table id="244" parent="2" name="course_det">
+    <table id="243" parent="3" name="course_det">
       <Engine>MyISAM</Engine>
     </table>
-    <table id="245" parent="2" name="course_tbl">
+    <table id="244" parent="3" name="course_tbl">
       <Engine>MyISAM</Engine>
     </table>
-    <table id="246" parent="2" name="info"/>
-    <table id="247" parent="2" name="major">
+    <table id="245" parent="3" name="info">
       <Engine>MyISAM</Engine>
     </table>
-    <column id="248" parent="243" name="title">
-      <Position>1</Position>
-      <DataType>varchar(100)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="249" parent="243" name="content">
-      <Position>2</Position>
-      <DataType>varchar(1000)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="250" parent="243" name="ddl">
-      <Position>3</Position>
-      <DataType>datetime|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="251" parent="243" name="courseId">
-      <Position>4</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="252" parent="244" name="courseId">
+    <table id="246" parent="3" name="major">
+      <Engine>MyISAM</Engine>
+    </table>
+    <column id="247" parent="243" name="courseId">
       <Position>1</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="253" parent="244" name="courseName">
+    <column id="248" parent="243" name="courseName">
       <Position>2</Position>
       <DataType>varchar(200)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="254" parent="244" name="professor">
+    <column id="249" parent="243" name="Teacher">
       <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="255" parent="244" name="Assignments">
+    <column id="250" parent="243" name="Assignment">
       <Position>4</Position>
       <DataType>varchar(1000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="256" parent="244" name="midterm">
-      <Position>5</Position>
-      <DataType>date|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="257" parent="244" name="final">
-      <Position>6</Position>
-      <DataType>date|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="258" parent="244" name="Introduction">
-      <Position>7</Position>
-      <DataType>varchar(1000)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="259" parent="244" name="PRIMARY">
+    <key id="251" parent="243" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>courseId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="260" parent="245" name="ID">
+    <column id="252" parent="244" name="ID">
       <Position>1</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="261" parent="245" name="Major">
+    <column id="253" parent="244" name="Major">
       <Position>2</Position>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="262" parent="245" name="Major">
+    <index id="254" parent="244" name="Major">
       <ColNames>Major</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="263" parent="245" name="PRIMARY">
+    <key id="255" parent="244" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="264" parent="246" name="info">
+    <column id="256" parent="245" name="info">
       <Position>1</Position>
-      <DataType>varchar(1000)|0s</DataType>
+      <DataType>varchar(800)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="265" parent="246" name="date">
+    <column id="257" parent="245" name="date">
       <Position>2</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="266" parent="246" name="uploader">
-      <Position>3</Position>
-      <DataType>varchar(100)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="267" parent="246" name="title">
-      <Position>4</Position>
-      <DataType>varchar(200)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="268" parent="246" name="courseId">
-      <Position>5</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="269" parent="247" name="CId1">
+    <column id="258" parent="246" name="major">
       <Position>1</Position>
-      <DataType>varchar(100)|0s</DataType>
+      <DataType>varchar(200)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="270" parent="247" name="CId2">
+    <column id="259" parent="246" name="Info">
       <Position>2</Position>
-      <DataType>varchar(100)|0s</DataType>
+      <DataType>varchar(2000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="271" parent="247" name="CId3">
+    <column id="260" parent="246" name="CId1">
       <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="272" parent="247" name="CId4">
+    <column id="261" parent="246" name="CId2">
       <Position>4</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="273" parent="247" name="major">
+    <column id="262" parent="246" name="CId3">
       <Position>5</Position>
-      <DataType>char(100)|0s</DataType>
+      <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="274" parent="247" name="CId1">
+    <column id="263" parent="246" name="CId4">
+      <Position>6</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="264" parent="246" name="CId1">
       <ColNames>CId1</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="275" parent="247" name="CId2">
+    <index id="265" parent="246" name="CId2">
       <ColNames>CId2</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="276" parent="247" name="CId3">
+    <index id="266" parent="246" name="CId3">
       <ColNames>CId3</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="277" parent="247" name="CId4">
+    <index id="267" parent="246" name="CId4">
       <ColNames>CId4</ColNames>
       <Type>btree</Type>
     </index>
+    <key id="268" parent="246" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>major</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>

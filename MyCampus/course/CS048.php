@@ -8,18 +8,8 @@
 
 $servername = "localhost";  //此处需填写正确的服务器名称
 $username = "root";  //此处需填写正确的用户名
-<<<<<<< HEAD
 $password = "";  //此处需填写正确的密码
 $dbname = "course";
-=======
-<<<<<<< HEAD
-$password = "";  //此处需填写正确的密码
-$dbname = "course";
-=======
-$password = "root";  //此处需填写正确的密码
-$dbname = "login";
->>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
->>>>>>> da5c0782449664ff72b16dfb886a10595415997b
 ?>
 <?php
         $conn=mysqli_connect($servername,$username,$password);
@@ -122,10 +112,6 @@ $dbname = "login";
     <div id="main" class="grid_8">
 
         <h3 id="syllabus">Course Name</h3>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> da5c0782449664ff72b16dfb886a10595415997b
         <?php
              $id=$_GET['id'];
             $sql = "select * from course_det where (courseId=$id)";
@@ -140,21 +126,6 @@ $dbname = "login";
             echo "<h4>Final: {$row["final"]}</h4>";
         ?>
 
-<<<<<<< HEAD
-=======
-=======
-
-        <h4>professor: Mr. Wang</h4>
-        <h4>Introduction:</h4>
-        <p>
-            this course is a very important course for students to learn computer.
-        </p>
-        <h4>Midterm:</h4>
-        <p>November,12th</p>
-        <h4>Final:</h4>
-        <p>January,6th</p>
->>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
->>>>>>> da5c0782449664ff72b16dfb886a10595415997b
 
 
 

@@ -81,24 +81,10 @@
  * Time: 15:48
  */
 
-<<<<<<< HEAD
 $servername = "localhost";  //此处需填写正确的服务器名称
 $username = "root";  //此处需填写正确的用户名
 $password = "";  //此处需填写正确的密码
 $dbname = "stu_info";
-=======
-<<<<<<< HEAD
-$servername = "localhost";  //此处需填写正确的服务器名称
-$username = "root";  //此处需填写正确的用户名
-$password = "jiaXINGlei123";  //此处需填写正确的密码
-$dbname = "course_info";
-=======
-$servername = "";  //此处需填写正确的服务器名称
-$username = "";  //此处需填写正确的用户名
-$password = "";  //此处需填写正确的密码
-$dbname = "stu_info";
->>>>>>> dc02c9c9049c02f180dd5dd7837cc541c22135b5
->>>>>>> da5c0782449664ff72b16dfb886a10595415997b
 ?>
 
 <?php
@@ -143,13 +129,8 @@ if(isset($_POST["submit"]))
             echo "<script>alert('用户名已被使用！'); history.go(-1);</script>";
         }
         else{
-<<<<<<< HEAD
             $sql = "INSERT INTO login_tbl ".
                 "(username,password,date,stu_name,stu_id,college,major) ".
-=======
-            $sql = "INSERT INTO stu_info ".
-                "(username,password,date,name,stu_id,school,major) ".
->>>>>>> da5c0782449664ff72b16dfb886a10595415997b
                 "VALUES ".
                 "('$user','$psw',NOW(),'$name','$num','$sch','$maj')";
 

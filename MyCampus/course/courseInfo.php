@@ -7,11 +7,7 @@
  */
 
 $servername = "localhost";  //此处需填写正确的服务器名称
-<<<<<<< HEAD
 $username = "";  //此处需填写正确的用户名
-=======
-$username = "root";  //此处需填写正确的用户名
->>>>>>> da5c0782449664ff72b16dfb886a10595415997b
 $password = "";  //此处需填写正确的密码
 $dbname = "course_info";
 ?>
@@ -203,7 +199,6 @@ mysqli_select_db($conn,$dbname)or die("数据库访问错误");
         <!-- right-columns starts -->
         <div id="right-columns" class="grid_4 omega">
 
-<<<<<<< HEAD
             <h3>INFO</h3>
 
             <div class="featured-post">
@@ -235,55 +230,6 @@ mysqli_select_db($conn,$dbname)or die("数据库访问错误");
 
             </div>
 
-=======
-            <h3>To-Do List</h3>
-
-            <div class="featured-post">
-
-                <h4><a href="EI203.php">[CS101]Homework 2</a></h4>
-                <p class="post-info">Posted by <a href="EI203.php">erwin</a><br>due on 09/26/08 </p>
-                <p>
-                    <a href="http://getfirefox.com/"></a>
-                    Vestibulum venenatis. Nulla vel ipsum. Proin rutrum, urna sit
-                </p>
-
-                <p><a class="more-link" href="EI203.php">more</a></p>
-
-            </div>
-
-            <div class="featured-post">
-
-                <h4><a href="EI203.php">[IS202]Project 1</a></h4>
-                <p class="post-info">Posted by <a href="EI203.php">erwin</a><br>due on 09/26/08 </p>
-                <p>
-                    Vestibulum venenatis. Nulla vel ipsum. Proin rutrum, urna sit
-                </p>
-
-                <p><a class="more-link" href="EI203.php">more</a></p>
-
-            </div>
-
-
-
-            <h3>Coming Up</h3>
-
-            <div class="featured-post">
-                <div class="featured-post">
-
-                    <h4><a href="EI203.php">Discussion</a></h4>
-                    <p class="post-info">due on 09/26/08 </p>
-                    <p>
-                        Vestibulum venenatis. Nulla vel ipsum. Proin rutrum, urna sit
-                    </p>
-
-                    <p><a class="more-link" href="EI203.php">more</a></p>
-
-                </div>
-            </div>
-
-
-
->>>>>>> da5c0782449664ff72b16dfb886a10595415997b
             <!-- end left-columns -->
         </div>
 

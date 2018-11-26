@@ -21,7 +21,6 @@
       <user-name>root</user-name>
       <introspection-schemas>*:course_info</introspection-schemas>
     </data-source>
-<<<<<<< HEAD
     <data-source name="info@localhost" uuid="b4b6c0e7-fca0-4ae4-ba0c-0498370496cb">
       <database-info product="MySQL" version="5.5.5-10.1.36-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
         <extra-name-characters>#@</extra-name-characters>
@@ -32,7 +31,5 @@
       <user-name>root</user-name>
       <introspection-schemas>*:info</introspection-schemas>
     </data-source>
-=======
->>>>>>> da5c0782449664ff72b16dfb886a10595415997b
   </component>
 </project>
