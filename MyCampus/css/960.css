@@ -13,7 +13,7 @@
 {
 	margin-left: auto;
 	margin-right: auto;
-	width: 960px;
+	width: 1024px;
 }
 
 /* =Grid >> Global
@@ -51,7 +51,7 @@
 .container_12 .grid_6,
 .container_16 .grid_8
 {
-	width: 460px;
+	width: 480px;
 }
 
 .container_12 .grid_9,
