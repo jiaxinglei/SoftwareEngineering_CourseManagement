@@ -20,19 +20,20 @@ body {
 /* Links */
 a:link, a:visited { 
 	text-decoration: none;
-	color: #AE855C;	
+	color: #7ba857;
 }
 a:hover {
-	border-bottom: 1px dotted #AE855C;	
+	border-bottom: 1px dotted #7ba857;
 }
 a.more-link {
 	padding-bottom: 2px;
 	font-weight: bold;	
-	border-bottom: 1px dotted #AE855C;	
+	border-bottom: 1px dotted #7ba857;
 }
 a:hover.more-link {
 	text-decoration: none;
 }
+
 /* Headers */
 h1, h2, h3, h4 {
 	font: bold 1em/1.5em Georgia, 'Times New Roman', Times, serif;
@@ -41,7 +42,7 @@ h1, h2, h3, h4 {
 }
 h1 { font-size: 3.7em; font-weight: normal; letter-spacing: -2px; }
 h2 { font-size: 2.8em; font-weight: normal; color: #663333; }
-h3 { font-size: 1em; font-weight: normal; letter-spacing: -0.5px; padding-top: 15px;}
+h3 { font-size: 2em; font-weight: normal; letter-spacing: -0.5px; padding-top: 15px;}
 h4 { font-size: 1.3em; }
 
 /* Lists */
@@ -60,6 +61,11 @@ dd {
   padding-left: 25px; 
 }
 
+div.menu{
+    background: #f4faee;
+    border-style:solid;
+    border:1px;
+}
 p, dl { padding: 10px 15px; }
 
 /* Images */
@@ -165,7 +171,7 @@ input.button {
 	margin: 0;
 	padding: 2px 3px; 
 	color: #fff;
-	background: #9CCF5F;
+	background: #9bc17c;
 	
 	border-width: 1px;
   	border-style: solid;
@@ -310,9 +316,9 @@ input.button {
 
 /* main column */
 #main h3 {
-	font: normal 2.3em Georgia, 'Times New Roman', Times, Serif;
+	font: normal 2em Georgia, 'Times New Roman', Times, Serif;
 	color: #444;
-	letter-spacing: -2.2px;	
+	letter-spacing: -0.5px;
 	margin-left: 5px;	
 	margin-right: 15px;
 	padding-left: 5px;
@@ -322,6 +328,12 @@ input.button {
 #main h3 a {
 	color: #444;
 	border: none;
+}
+
+#main div #menu{
+    /*background: rgba(246, 252, 240, 0.93);*/
+    border-style:solid;
+    border:2px;
 }
 /* left columns */
 #left-columns h3 {

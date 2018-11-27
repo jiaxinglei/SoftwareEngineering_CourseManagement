@@ -9,7 +9,7 @@
 $servername = "localhost";  //此处需填写正确的服务器名称
 $username = "root";  //此处需填写正确的用户名
 $password = "root";  //此处需填写正确的密码
-$dbname = "login";
+$dbname = "stu_info";
 ?>
 <?php
 $conn=mysqli_connect($servername,$username,$password);
@@ -19,6 +19,7 @@ if(! $conn)
 }
 mysqli_select_db($conn,$dbname)or die("数据库访问错误");
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -75,19 +76,47 @@ mysqli_select_db($conn,$dbname)or die("数据库访问错误");
 
         <!-- main -->
         <div id="main" class="grid_8">
-            <h2>Personal Information:</h2>
+            <h3>Personal Information:</h3>
+            <br>
             <!--此处需要导入学生信息-->
             <?php
                 session_start();
-                echo "<h4>Name: {$_SESSION['name']}<h4>";
+                echo "<h4>Username:  {$_SESSION['username']}</h4>";
+                echo "<h4>Name:  {$_SESSION['name']}</h4>";
                 echo "<h4>Student Number: {$_SESSION['stu_id']}</h4>";
                 echo "<h4>Academy: {$_SESSION['school']}</h4>";
                 echo "<h4>Major: {$_SESSION['major']}</h4>";
+                echo "<h4>Bio: {$_SESSION['bio']}</h4>";
             ?>
+
+        </div>
+        <div>
+            <br>
+            <br>
+            <a href="accountEdit.php">edit</a>
         </div>
     </div>
 </div>
+<div id="footer-bottom">
 
+    <p class="bottom-left">
+        &nbsp; &copy;2018 All copyright:
+        Design by MYCAMPUS team
+    </p>
+
+    <script>
+        function showemail(){
+            alert('Contact us at: ' +
+                'mycampus@sjtu.edu.cn')
+        }
+    </script>
+    <p class="bottom-right" >
+        <a href="mainpage.php">Home</a> |
+        <a href="help.html">Help</a> |
+        <a href="mailto:mycampus@gmail.com">Contact us</a>
+    </p>
+
+</div>
 
 </body>
 </html>

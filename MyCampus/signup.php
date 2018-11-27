@@ -46,7 +46,10 @@
         major: <input type="text" name="major">
     </table>
 
-    <input type="submit" value="SIGN UP" name="submit">
+    <a href="login.html">I have an account: LOG IN</a>
+    <br>
+    <br>
+    <input class="button" type="submit" value="SIGN UP" name="submit">
 </form>
 
 </body>
@@ -65,8 +68,8 @@
     </script>
     <p class="bottom-right" >
         <a href="mainpage.php">Home</a> |
-        <a href="help.php">Help</a> |
-        <a onclick="showemail()">Contact us</a>
+        <a href="help.html">Help</a> |
+        <a href="mailto:mycampus@gmail.com">Contact us</a>
     </p>
 
 </div>
@@ -81,9 +84,9 @@
  * Time: 15:48
  */
 
-$servername = "";  //此处需填写正确的服务器名称
-$username = "";  //此处需填写正确的用户名
-$password = "";  //此处需填写正确的密码
+$servername = "localhost";  //此处需填写正确的服务器名称
+$username = "root";  //此处需填写正确的用户名
+$password = "root";  //此处需填写正确的密码
 $dbname = "stu_info";
 ?>
 
@@ -129,8 +132,8 @@ if(isset($_POST["submit"]))
             echo "<script>alert('用户名已被使用！'); history.go(-1);</script>";
         }
         else{
-            $sql = "INSERT INTO stu_info ".
-                "(username,password,date,name,stu_id,school,major) ".
+            $sql = "INSERT INTO login_tbl ".
+                "(username,password,date,stu_name,stu_id,college,major) ".
                 "VALUES ".
                 "('$user','$psw',NOW(),'$name','$num','$sch','$maj')";
 

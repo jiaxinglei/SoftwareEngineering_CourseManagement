@@ -9,7 +9,7 @@
 $servername = "localhost";  //此处需填写正确的服务器名称
 $username = "root";  //此处需填写正确的用户名
 $password = "root";  //此处需填写正确的密码
-$dbname = "login";
+$dbname = "course_info";
 ?>
 <?php
     $conn=mysqli_connect($servername,$username,$password);
@@ -81,15 +81,55 @@ $dbname = "login";
 
                 <!--courses 从数据库导入-->
                 <?php
-                    $sql = "select * from course_tbl ";
-                    $result=mysqli_query($conn,$sql);
-                    $num = mysqli_num_rows($result);
-                    for($i=0;$i<$num;$i++){
-                        $row = mysqli_fetch_array($result);
-                        $courseName=$row["courseName"];
-                        $courseId=$row["courseId"];
-                        echo "<li><a href='course/$courseId.php'>[".$courseId."] ".$courseName."</a></li>";
-                    }
+                session_start();
+                $major=$_SESSION["major"];
+                $sql = "select * from major where (major='$major')";
+                $result=mysqli_query($conn,$sql);
+                if (!$result) {
+                    printf("Error: %s\n", mysqli_error($conn));
+                    exit();
+                }
+                $row = mysqli_fetch_array($result);
+                $courseId = $row["CId1"];
+                $sql = "select * from course_det where (courseId='$courseId')";
+                $result=mysqli_query($conn,$sql);
+                if (!$result) {
+                    printf("Error: %s\n", mysqli_error($conn));
+                    exit();
+                }
+                $rows = mysqli_fetch_array($result);
+                $courseName=$rows["courseName"];
+                echo "<li><a href='course/courseInfo.php?id=$courseId'>[" . $courseId . "] " . $courseName . "</a></li>";
+                $courseId = $row["CId2"];
+                $sql = "select * from course_det where (courseId='$courseId')";
+                $result=mysqli_query($conn,$sql);
+                if (!$result) {
+                    printf("Error: %s\n", mysqli_error($conn));
+                    exit();
+                }
+                $rows = mysqli_fetch_array($result);
+                $courseName=$rows["courseName"];
+                echo "<li><a href='course/courseInfo.php?id=$courseId'>[" . $courseId . "] " . $courseName . "</a></li>";
+                $courseId = $row["CId3"];
+                $sql = "select * from course_det where (courseId='$courseId')";
+                $result=mysqli_query($conn,$sql);
+                if (!$result) {
+                    printf("Error: %s\n", mysqli_error($conn));
+                    exit();
+                }
+                $rows = mysqli_fetch_array($result);
+                $courseName=$rows["courseName"];
+                echo "<li><a href='course/courseInfo.php?id=$courseId'>[" . $courseId . "] " . $courseName . "</a></li>";
+                $courseId = $row["CId4"];
+                $sql = "select * from course_det where (courseId='$courseId')";
+                $result=mysqli_query($conn,$sql);
+                if (!$result) {
+                    printf("Error: %s\n", mysqli_error($conn));
+                    exit();
+                }
+                $rows = mysqli_fetch_array($result);
+                $courseName=$rows["courseName"];
+                echo "<li><a href='course/courseInfo.php?id=$courseId'>[" . $courseId . "] " . $courseName . "</a></li>";
                 ?>
 
             </ul>
@@ -110,7 +150,7 @@ $dbname = "login";
     <div id="main" class="grid_12">
 
 
-        <h3>CLASS TABLE</h3>
+        <h3>CALENDAR</h3>
         <h4>choose a course from the left column.</h4>
 
         <div id="calendar" class="calendar"></div>
@@ -146,7 +186,7 @@ $dbname = "login";
     <p class="bottom-right" >
         <a href="mainpage.php">Home</a> |
         <a href="help.html">Help</a> |
-        <a onclick="showemail()">Contact us</a>
+        <a href="mailto:mycampus@gmail.com">Contact us</a>
     </p>
 
 </div>

@@ -9,13 +9,13 @@
 $servername = "localhost";  //此处需填写正确的服务器名称
 $username = "root";  //此处需填写正确的用户名
 $password = "root";  //此处需填写正确的密码
-$dbname = "login";
+$dbname = "stu_info";
 ?>
 <?php
     if(isset($_POST["submit"]))//只用submit存在才能执行
     {
      // Session需要先启动。
-     session_start();
+     @session_start();
     if(isset($_POST['username']) && isset($_POST['password'])){
         $name = $_POST['username'];
         $pwd = $_POST['password'];
@@ -31,11 +31,15 @@ $dbname = "login";
         //判断结果集的记录数是否大于0
         if ($result->num_rows > 0) {
             $_SESSION["username"]=$name;
+            $_SESSION["bio"]=$bio;
+            while($row=$result->fetch_array()){
+                $_SESSION['major']=$row['major'];
+            }
             echo "<script>alert('登陆成功!');window.location.href='mainpage.php'</script>";
         }
          else {
             echo "用户名或密码错误，请重试";
-            header("Refresh:1;url=login.php");
+            header("Refresh:1;url=login.html");
         }
         $conn->close();
 }

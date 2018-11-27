@@ -9,7 +9,7 @@
 $servername = "localhost";  //此处需填写正确的服务器名称
 $username = "root";  //此处需填写正确的用户名
 $password = "root";  //此处需填写正确的密码
-$dbname = "login";
+$dbname = "stu_info";
 ?>
 <?php
     session_start();
@@ -21,10 +21,12 @@ $dbname = "login";
     $sql = "SELECT * FROM login_tbl WHERE (username='$name')";
     $result = $conn->query($sql);
     while($row=$result->fetch_array()){
-        $_SESSION["name"]=$row['name'];
+        $_SESSION['username']=$row['username'];
+        $_SESSION['name']=$row['stu_name'];
         $_SESSION['stu_id']=$row['stu_id'];
-        $_SESSION['school']=$row['school'];
+        $_SESSION['school']=$row['college'];
         $_SESSION['major']=$row['major'];
+        $_SESSION['bio']=$row['bio'];
     }
     header('location:account.php');
     $conn->close();

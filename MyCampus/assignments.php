@@ -1,3 +1,17 @@
+<?php
+    $servername="localhost";
+    $username="root";
+    $password="root";
+    $dbname="course_info";
+?>
+<?php
+$conn=mysqli_connect($servername,$username,$password);
+if(! $conn)
+{
+    die ('connect error:'.mysqli_error($conn));
+}
+mysqli_select_db($conn,$dbname)or die("数据库访问错误");
+?>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -25,7 +39,7 @@
 	<div id="header-wrap"><div id="header" class="container_16">			
 				
 		<h1 id="logo-text"><a href="course.php" title="">My Campus</a></h1>
-		<p id="intro">your best course manager...</p>
+		<p id="intro">the best course manager...</p>
 		
 		<!-- navigation -->
 		<div  id="nav">
@@ -41,13 +55,13 @@
 		
 		<div id="header-image"></div> 
 		
-		<form id="quick-search" action="course.php" method="get" >
-			<p>
-			<label for="qsearch">Search:</label>
-			<input class="tbox" id="qsearch" type="text" name="qsearch" value="Search..." title="Start typing and hit ENTER" />
-			<input class="btn" alt="Search" type="image" name="searchsubmit" title="Search" src="images/search.gif" />
-			</p>
-		</form>					
+<!--		<form id="quick-search" action="course.php" method="get" >-->
+<!--			<p>-->
+<!--			<label for="qsearch">Search:</label>-->
+<!--			<input class="tbox" id="qsearch" type="text" name="qsearch" value="Search..." title="Start typing and hit ENTER" />-->
+<!--			<input class="btn" alt="Search" type="image" name="searchsubmit" title="Search" src="images/search.gif" />-->
+<!--			</p>-->
+<!--		</form>					-->
 	
 	<!-- header ends here -->
 	</div></div>
@@ -83,95 +97,31 @@
 
 				<li class="alt" id="comment-63">
 
-					<cite>
-						<!--<img alt="" src="images/gravatar.jpg" class="avatar" height="40" width="40" />			-->
-						<a href="course.php">Cloud Computing Technology</a> Chao Li <br />
-						<span class="comment-data"><a href="#comment-63" title="">July 20th, 2019 at 8:08 am</a> </span>
-					</cite>
+                    <?php
+                    session_start();
+                    $sql="select * from assignments order by ddl ASC ";
+                    $result=mysqli_query($conn,$sql);
+                    $num=$result->num_rows;
+                    for($i=0;$i<$num;$i++){
+                        $row=mysqli_fetch_array($result);
+                        $sql2="select * from major where (CId1='{$row["courseId"]}' or CId2='{$row["courseId"]}' or CId3='{$row["courseId"]}' or CId4='{$row["courseId"]}') and major='{$_SESSION["major"]}'";
+                        $result2=mysqli_query($conn,$sql2);
 
-					<div class="comment-text">
-						<p>Apache Spark program</p>
-					</div>
-
-				</li>
-
-				<li id="comment-67">
-
-					<cite>
-						<!--<img alt="" src="images/gravatar.jpg" class="avatar" height="40" width="40" />			-->
-						<a href="course.php">Cloud Computing Technology</a> Chao Li <br />
-						<span class="comment-data"><a href="#comment-63" title="">July 20th, 2019 at 8:08 am</a> </span>
-					</cite>
-
-					<div class="comment-text">
-						<p>Apache Spark program</p>
-					</div>
+                        $id=$row["courseId"];
+                        if($result2->num_rows>0 and $row["ddl"]>date("Y-m-d h:i:s",time())){
+                            echo "<h4><cite><a href='course/courseInfo.php?id=$id'>{$row["title"]}</a></cite></h4>";
+                            echo "<span class=\"comment-data\"><a href='#comment-63' title=''>deadline:{$row["ddl"]}</a> </span> <p>{$row["content"]}</p>";
+                        }
+                    }
+                    ?>
 
 				</li>
 
-				<li class="alt" id="comment-71">
 
-					<cite>
-						<!--<img alt="" src="images/gravatar.jpg" class="avatar" height="40" width="40" />			-->
-						<a href="course.php">Cloud Computing Technology</a> Chao Li <br />
-						<span class="comment-data"><a href="#comment-63" title="">July 20th, 2019 at 8:08 am</a> </span>
-					</cite>
-
-					<div class="comment-text">
-						<p>Apache Spark program</p>
-					</div>
-
-				</li>
 
 			</ol>
 
-			<h3 id="comments_2">past assignment</h3>
 
-			<ol class="commentlist">
-
-				<li class="alt" id="comment-80">
-
-					<cite>
-						<!--<img alt="" src="images/gravatar.jpg" class="avatar" height="40" width="40" />			-->
-						<a href="course.php">Cloud Computing Technology</a> Chao Li <br />
-						<span class="comment-data"><a href="#comment-63" title="">July 20th, 2019 at 8:08 am</a> </span>
-					</cite>
-
-					<div class="comment-text">
-						<p>Apache Spark program</p>
-					</div>
-
-				</li>
-
-				<li id="comment-81">
-
-					<cite>
-						<!--<img alt="" src="images/gravatar.jpg" class="avatar" height="40" width="40" />			-->
-						<a href="course.php">Cloud Computing Technology</a> Chao Li <br />
-						<span class="comment-data"><a href="#comment-63" title="">July 20th, 2019 at 8:08 am</a> </span>
-					</cite>
-
-					<div class="comment-text">
-						<p>Apache Spark program</p>
-					</div>
-
-				</li>
-
-				<li class="alt" id="comment-82">
-
-					<cite>
-						<!--<img alt="" src="images/gravatar.jpg" class="avatar" height="40" width="40" />			-->
-						<a href="course.php">Cloud Computing Technology</a> Chao Li <br />
-						<span class="comment-data"><a href="#comment-63" title="">July 20th, 2019 at 8:08 am</a> </span>
-					</cite>
-
-					<div class="comment-text">
-						<p>Apache Spark program</p>
-					</div>
-
-				</li>
-
-			</ol>
 
 
 			<!-- main ends -->
@@ -198,7 +148,7 @@
         <p class="bottom-right" >
             <a href="mainpage.php">Home</a> |
             <a href="help.html">Help</a> |
-            <a onclick="showemail()">Contact us</a>
+            <a href="mailto:mycampus@gmail.com">Contact us</a>
         </p>
 
     </div>

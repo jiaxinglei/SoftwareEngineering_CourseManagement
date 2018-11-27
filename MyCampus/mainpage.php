@@ -9,10 +9,10 @@
 $servername = "localhost";  //此处需填写正确的服务器名称
 $username = "root";  //此处需填写正确的用户名
 $password = "root";  //此处需填写正确的密码
-$dbname = "login";
+$dbname = "course_info";
 ?>
 <?php
-    $conn=mysqli_connect($servername,$username,$password);
+    $conn = new mysqli($servername, $username, $password, $dbname);
     if(! $conn)
     {
         die ('connect error:'.mysqli_error($conn));
@@ -42,7 +42,11 @@ $dbname = "login";
 
 </head>
 <body>
+<head>
+    <link href="css/zzsc.css" rel="stylesheet" type="text/css" />
+</head>
 
+<a href=" " class="cd-top">Top</a>
 <!-- header starts-->
 <div id="header-wrap"><div id="header" class="container_16">
 
@@ -56,7 +60,7 @@ $dbname = "login";
                 <li><a href="course.php">courses</a></li>
                 <li><a href="assignments.php">assignments</a></li>
                 <li><a href="http://mail.sjtu.edu.cn">inbox</a></li>
-                <li><a href="account.php">account</a></li>
+                <li><a href="account_bg.php">account</a></li>
                 <li><a href="help.html">help</a></li>
             </ul>
         </div>
@@ -81,15 +85,55 @@ $dbname = "login";
                 <ul>
 
                     <?php
-                    $sql = "select * from course_tbl ";
+                    session_start();
+                    $major=$_SESSION["major"];
+                    $sql = "select * from major where (major='$major')";
                     $result=mysqli_query($conn,$sql);
-                    $num = mysqli_num_rows($result);
-                    for($i=0;$i<$num;$i++){
-                        $row = mysqli_fetch_array($result);
-                        $courseName=$row["courseName"];
-                        $courseId=$row["courseId"];
-                        echo "<li><a href='course/$courseId.php'>[".$courseId."] ".$courseName."</a></li>";
+                    if (!$result) {
+                        printf("Error: %s\n", mysqli_error($conn));
+                        exit();
                     }
+                    $row = mysqli_fetch_array($result);
+                    $courseId = $row["CId1"];
+                    $sql = "select * from course_det where (courseId='$courseId')";
+                    $result=mysqli_query($conn,$sql);
+                    if (!$result) {
+                        printf("Error: %s\n", mysqli_error($conn));
+                        exit();
+                    }
+                    $rows = mysqli_fetch_array($result);
+                    $courseName=$rows["courseName"];
+                        echo "<li><a href='course/courseInfo.php?id=$courseId'>[" . $courseId . "] " . $courseName . "</a></li>";
+                        $courseId = $row["CId2"];
+                    $sql = "select * from course_det where (courseId='$courseId')";
+                    $result=mysqli_query($conn,$sql);
+                    if (!$result) {
+                        printf("Error: %s\n", mysqli_error($conn));
+                        exit();
+                    }
+                    $rows = mysqli_fetch_array($result);
+                    $courseName=$rows["courseName"];
+                        echo "<li><a href='course/courseInfo.php?id=$courseId'>[" . $courseId . "] " . $courseName . "</a></li>";
+                        $courseId = $row["CId3"];
+                    $sql = "select * from course_det where (courseId='$courseId')";
+                    $result=mysqli_query($conn,$sql);
+                    if (!$result) {
+                        printf("Error: %s\n", mysqli_error($conn));
+                        exit();
+                    }
+                    $rows = mysqli_fetch_array($result);
+                    $courseName=$rows["courseName"];
+                        echo "<li><a href='course/courseInfo.php?id=$courseId'>[" . $courseId . "] " . $courseName . "</a></li>";
+                        $courseId = $row["CId4"];
+                    $sql = "select * from course_det where (courseId='$courseId')";
+                    $result=mysqli_query($conn,$sql);
+                    if (!$result) {
+                        printf("Error: %s\n", mysqli_error($conn));
+                        exit();
+                    }
+                    $rows = mysqli_fetch_array($result);
+                    $courseName=$rows["courseName"];
+                        echo "<li><a href='course/courseInfo.php?id=$courseId'>[" . $courseId . "] " . $courseName . "</a></li>";
                     ?>
 
                 </ul>
@@ -103,37 +147,33 @@ $dbname = "login";
 
         <!-- main -->
         <div id="main" class="grid_8">
+            <?php
+            $sql = "select * from info order by date DESC";
+            $result=mysqli_query($conn,$sql);
+            if (!$result) {
+                printf("Error: %s\n", mysqli_error($conn));
+                exit();
+            }
 
-            <h3><a href="course.php">INFO 1</a></h3>
+            ?>
 
-            <p class="post-info">Posted by <a href="course.php">erwin</a> | Filed under <a href="course.php">templates</a>, <a href="course.php">internet</a>  </p>
+            <?php
+            $i=0;$j=0;
+            while($i<5 and $j<$result->num_rows){
+                $row = mysqli_fetch_array($result);
+                $sql2 = "select * from major where (CId1='{$row["courseId"]}' or CId2='{$row["courseId"]}' or CId3='{$row["courseId"]}' or CId4='{$row["courseId"]}') and major='{$_SESSION["major"]}'";
+                $result2 =mysqli_query($conn,$sql2);
+                $id=$row["courseId"];
+                $j++;
+                if($result2->num_rows>0) {
+                    echo "<a href='course/courseInfo.php?id=$id'><h3>{$row["title"]}</h3></a>";
+                    echo "<p class=\"post-info\">Posted by {$row["uploader"]}|{$row["date"]}  </p>";
+                    echo"<p>{$row["info"]}</p>";
+                    $i++;
+                }
+            }
+            ?>
 
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
-            </p>
-
-            <!--
-            <p class="postmeta">
-            <a href="course.php" class="readmore">Read more</a> |
-            <a href="course.php" class="comments">Comments (3)</a> |
-            <span class="date">July 20, 2008</span>
-            </p>
-            -->
-
-            <h3><a href="course.php">INFO 2</a></h3>
-
-            <p class="post-info">Posted by <a href="course.php">erwin</a> | Filed under <a href="course.php">templates</a>, <a href="course.php">internet</a>  </p>
-
-            <p><a href="http://getfirefox.com/"></a>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
-            </p>
-
-            <h3><a href="course.php">INFO 3</a></h3>
-
-            <p class="post-info">Posted by <a href="course.php">erwin</a> | Filed under <a href="course.php">templates</a>, <a href="course.php">internet</a>  </p>
-
-            <p><a href="http://getfirefox.com/"></a>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
-            </p>
 
 
         <!-- main ends -->
@@ -147,46 +187,22 @@ $dbname = "login";
             <h3>To-Do List</h3>
 
             <div class="featured-post">
+                <?php
+                    $sql="select * from assignments order by ddl ASC ";
+                    $result=mysqli_query($conn,$sql);
+                    $num=$result->num_rows;
+                    $id=$row["courseId"];
+                    for($i=0;$i<$num;$i++){
+                        $row=mysqli_fetch_array($result);
+                        $sql2="select * from major where (CId1='{$row["courseId"]}' or CId2='{$row["courseId"]}' or CId3='{$row["courseId"]}' or CId4='{$row["courseId"]}') and major='{$_SESSION["major"]}'";
+                        $result2=mysqli_query($conn,$sql2);
+                        if($result2->num_rows>0 and $row["ddl"]>date("Y-m-d h:i:s",time())){
+                            echo "<a href='course/courseInfo.php?id=$id#assg'><h4>{$row['title']}</h4></a>";
+                            echo "<p class=\"post-info\"> deadline:{$row["ddl"]}  </p> <p>{$row["content"]}</p>";
+                        }
+                    }
+                ?>
 
-                <h4><a href="course.php">[CS101]Homework 2</a></h4>
-                <p class="post-info">Posted by <a href="course.php">erwin</a><br>due on 09/26/08 </p>
-                <p>
-                    <a href="http://getfirefox.com/"></a>
-                    Vestibulum venenatis. Nulla vel ipsum. Proin rutrum, urna sit
-                </p>
-
-                <p><a class="more-link" href="course.php">more</a></p>
-
-            </div>
-
-            <div class="featured-post">
-
-                <h4><a href="course.php">[IS202]Project 1</a></h4>
-                <p class="post-info">Posted by <a href="course.php">erwin</a><br>due on 09/26/08 </p>
-                <p>
-                    Vestibulum venenatis. Nulla vel ipsum. Proin rutrum, urna sit
-                </p>
-
-                <p><a class="more-link" href="course.php">more</a></p>
-
-            </div>
-
-
-
-            <h3>Coming Up</h3>
-
-            <div class="featured-post">
-                <div class="featured-post">
-
-                    <h4><a href="course.php">Discussion</a></h4>
-                    <p class="post-info">due on 09/26/08 </p>
-                    <p>
-                        Vestibulum venenatis. Nulla vel ipsum. Proin rutrum, urna sit
-                    </p>
-
-                    <p><a class="more-link" href="course.php">more</a></p>
-
-                </div>
             </div>
 
 
@@ -196,13 +212,6 @@ $dbname = "login";
 
         <!-- contents end here -->
     </div></div>
-
-
-<head>
-    <link href="css/zzsc.css" rel="stylesheet" type="text/css" />
-</head>
-
-<a href=" " class="cd-top">Top</a>
 
 <div id="footer-bottom">
 
@@ -220,12 +229,11 @@ $dbname = "login";
     <p class="bottom-right" >
         <a href="mainpage.php">Home</a> |
         <a href="help.html">Help</a> |
-        <a onclick="showemail()">Contact us</a>
+        <a href="mailto:mycampus@gmail.com">Contact us</a>
     </p>
 
 </div>
 
-</div>
 <!-- footer ends here -->
 
 </body>
