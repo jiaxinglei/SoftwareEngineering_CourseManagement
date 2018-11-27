@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* theme screen stylesheets */
 
 /* import stylesheets and hide from ie/mac \*/
@@ -6,3 +7,13 @@
 @import url("KeepItSimple.css");
 
 /* end import/hide */
+=======
+/* theme screen stylesheets */
+
+/* import stylesheets and hide from ie/mac \*/
+@import url("reset.css");
+@import url("960.css");
+@import url("KeepItSimple.css");
+
+/* end import/hide */
+>>>>>>> 4b8e8a80d14c626a731fecfb600cb6a94217dea8

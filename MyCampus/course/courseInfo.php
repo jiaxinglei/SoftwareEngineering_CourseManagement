@@ -7,7 +7,11 @@
  */
 
 $servername = "localhost";  //此处需填写正确的服务器名称
+<<<<<<< HEAD
 $username = "root";  //此处需填写正确的用户名
+=======
+$username = "";  //此处需填写正确的用户名
+>>>>>>> 4b8e8a80d14c626a731fecfb600cb6a94217dea8
 $password = "";  //此处需填写正确的密码
 $dbname = "course_info";
 ?>
@@ -149,6 +153,7 @@ mysqli_select_db($conn,$dbname)or die("数据库访问错误");
         <!-- main -->
         <div id="main" class="grid_8">
 
+<<<<<<< HEAD
             <h3 id="syllabus">Syllabus</h3>
             <div class="menu">
                 <h4>MENU</h4>
@@ -160,6 +165,9 @@ mysqli_select_db($conn,$dbname)or die("数据库访问错误");
                     <li><a href="#assg">Assignment</a></li>
                 </ul>
             </div>
+=======
+            <h3 id="syllabus">Course Name</h3>
+>>>>>>> 4b8e8a80d14c626a731fecfb600cb6a94217dea8
             <?php
             $id=$_GET['id'];
             $sql = "select * from course_det where (courseId='$id')";
@@ -171,11 +179,19 @@ mysqli_select_db($conn,$dbname)or die("数据库访问错误");
             $row = mysqli_fetch_array($result);
             $courseName=$row["courseName"];
             $courseId=$row["courseId"];
+<<<<<<< HEAD
             echo "<h4 id='prof'>professor:</h4> <p>{$row["professor"]}</p>";
             echo "<h4 id='intro'>Introduction:</h4><p>{$row["Introduction"]}</p>";
             echo "<h4 id='mid'>Midterm:</h4> <p>{$row["midterm"]}</p>";
             echo "<h4 id='fin'>Final:</h4> <p>{$row["final"]}</p>";
             echo "<h4 id='assg'>Assignments:</h4> <p>{$row["Assignments"]}</p>";
+=======
+            echo "<h4>professor:</h4> <p>{$row["professor"]}</p>";
+            echo "<h4>Introduction:</h4><p>{$row["Introduction"]}</p>";
+            echo "<h4>Midterm:</h4> <p>{$row["midterm"]}</p>";
+            echo "<h4>Final:</h4> <p>{$row["final"]}</p>";
+            echo "<h4>Assignments:</h4> <p>{$row["Assignments"]}</p>";
+>>>>>>> 4b8e8a80d14c626a731fecfb600cb6a94217dea8
             ?>
             <!--<h4>professor: Mr. Wang</h4>
             <h4>Introduction:</h4>
@@ -220,6 +236,10 @@ mysqli_select_db($conn,$dbname)or die("数据库访问错误");
                     printf("Error: %s\n", mysqli_error($conn));
                     exit();
                 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b8e8a80d14c626a731fecfb600cb6a94217dea8
                 ?>
 
                 <?php
@@ -228,10 +248,16 @@ mysqli_select_db($conn,$dbname)or die("数据库访问错误");
                     $row = mysqli_fetch_array($result);
                     $sql2 = "select * from major where (CId1='{$row["courseId"]}' or CId2='{$row["courseId"]}' or CId3='{$row["courseId"]}' or CId4='{$row["courseId"]}') and major='{$_SESSION["major"]}'";
                     $result2 =mysqli_query($conn,$sql2);
+<<<<<<< HEAD
                     $id=$row["courseId"];
                     $j++;
                     if($result2->num_rows>0) {
                         echo "<a href='courseInfo.php?id=$id'><h4>{$row['title']}</h4></a>";
+=======
+                    $j++;
+                    if($result2->num_rows>0) {
+                        echo "<h4>{$row["title"]}</h4>";
+>>>>>>> 4b8e8a80d14c626a731fecfb600cb6a94217dea8
                         echo "<p class=\"post-info\">Posted by {$row["uploader"]}|{$row["date"]}  </p> <p>{$row["info"]}</p>";
                         $i++;
                     }

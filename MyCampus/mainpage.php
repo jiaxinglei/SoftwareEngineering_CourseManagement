@@ -159,10 +159,16 @@ $dbname = "course_info";
                 $row = mysqli_fetch_array($result);
                 $sql2 = "select * from major where (CId1='{$row["courseId"]}' or CId2='{$row["courseId"]}' or CId3='{$row["courseId"]}' or CId4='{$row["courseId"]}') and major='{$_SESSION["major"]}'";
                 $result2 =mysqli_query($conn,$sql2);
+<<<<<<< HEAD
                 $id=$row['courseId'];
                 $j++;
                 if($result2->num_rows>0) {
                     echo "<a href='course/courseInfo.php?id=$id'><h3>{$row['title']}</h3></a>";
+=======
+                $j++;
+                if($result2->num_rows>0) {
+                    echo "<h3>{$row["title"]}</h3>";
+>>>>>>> 4b8e8a80d14c626a731fecfb600cb6a94217dea8
                     echo "<p class=\"post-info\">Posted by {$row["uploader"]}|{$row["date"]}  </p> <p>{$row["info"]}</p>";
                     $i++;
                 }
@@ -198,9 +204,14 @@ $dbname = "course_info";
                         $row=mysqli_fetch_array($result);
                         $sql2="select * from major where (CId1='{$row["courseId"]}' or CId2='{$row["courseId"]}' or CId3='{$row["courseId"]}' or CId4='{$row["courseId"]}') and major='{$_SESSION["major"]}'";
                         $result2=mysqli_query($conn,$sql2);
+<<<<<<< HEAD
                         $id=$row["courseId"];
                         if($result2->num_rows>0 and $row["ddl"]>date("Y-m-d h:i:s",time())){
                             echo "<a href='course/courseInfo.php?id=$id#assg'><h4>{$row["title"]}</h4></a>";
+=======
+                        if($result2->num_rows>0 and $row["ddl"]>date("Y-m-d h:i:s",time())){
+                            echo "<h4>{$row["title"]}</h4>";
+>>>>>>> 4b8e8a80d14c626a731fecfb600cb6a94217dea8
                             echo "<p class=\"post-info\"> deadline:{$row["ddl"]}  </p> <p>{$row["content"]}</p>";
                         }
                     }

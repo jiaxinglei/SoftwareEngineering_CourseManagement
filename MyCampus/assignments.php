@@ -96,6 +96,10 @@ mysqli_select_db($conn,$dbname)or die("数据库访问错误");
 			<ol class="commentlist">
 
 				<li class="alt" id="comment-63">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b8e8a80d14c626a731fecfb600cb6a94217dea8
                     <?php
                     session_start();
                     $sql="select * from assignments order by ddl ASC ";
@@ -105,6 +109,7 @@ mysqli_select_db($conn,$dbname)or die("数据库访问错误");
                         $row=mysqli_fetch_array($result);
                         $sql2="select * from major where (CId1='{$row["courseId"]}' or CId2='{$row["courseId"]}' or CId3='{$row["courseId"]}' or CId4='{$row["courseId"]}') and major='{$_SESSION["major"]}'";
                         $result2=mysqli_query($conn,$sql2);
+<<<<<<< HEAD
                         $id=$row["courseId"];
                         if($result2->num_rows>0 and $row["ddl"]>date("Y-m-d h:i:s",time())){
                             echo "<cite><a href='course/courseInfo.php?id=$id'>{$row["title"]}</a></cite>";
@@ -114,6 +119,16 @@ mysqli_select_db($conn,$dbname)or die("数据库访问错误");
                     ?>
 				</li>
 
+=======
+                        if($result2->num_rows>0 and $row["ddl"]>date("Y-m-d h:i:s",time())){
+                            echo "<h4>{$row["title"]}</h4>";
+                            echo "<p class=\"post-info\"> deadline:{$row["ddl"]}  </p> <p>{$row["content"]}</p>";
+                        }
+                    }
+                    ?>
+
+				</li>
+>>>>>>> 4b8e8a80d14c626a731fecfb600cb6a94217dea8
 
 
 
