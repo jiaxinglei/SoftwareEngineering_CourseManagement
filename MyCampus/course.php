@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Created by PhpStorm.
  * User: Jia Xinglei
@@ -6,10 +6,10 @@
  * Time: 15:48
  */
 
-$servername = "localhost";  //此处需填写正确的服务器名称
-$username = "root";  //此处需填写正确的用户名
-$password = "root";  //此处需填写正确的密码
-$dbname = "course_info";
+$servername = "bdm290150117.my3w.com";  //此处需填写正确的服务器名称
+$username = "bdm290150117";  //此处需填写正确的用户名
+$password = "RuanGong8102";  //此处需填写正确的密码
+$dbname = "bdm290150117_db";
 ?>
 <?php
     $conn=mysqli_connect($servername,$username,$password);
@@ -81,7 +81,7 @@ $dbname = "course_info";
 
                 <!--courses 从数据库导入-->
                 <?php
-                session_start();
+                @session_start();
                 $major=$_SESSION["major"];
                 $sql = "select * from major where (major='$major')";
                 $result=mysqli_query($conn,$sql);

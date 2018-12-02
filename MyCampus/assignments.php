@@ -1,8 +1,8 @@
-<?php
-    $servername="localhost";
-    $username="root";
-    $password="root";
-    $dbname="course_info";
+﻿<?php
+$servername = "bdm290150117.my3w.com";  //此处需填写正确的服务器名称
+$username = "bdm290150117";  //此处需填写正确的用户名
+$password = "RuanGong8102";  //此处需填写正确的密码
+$dbname = "bdm290150117_db";
 ?>
 <?php
 $conn=mysqli_connect($servername,$username,$password);
@@ -98,7 +98,7 @@ mysqli_select_db($conn,$dbname)or die("数据库访问错误");
 				<li class="alt" id="comment-63">
 
                     <?php
-                    session_start();
+                    @session_start();
                     $sql="select * from assignments order by ddl ASC ";
                     $result=mysqli_query($conn,$sql);
                     $num=$result->num_rows;

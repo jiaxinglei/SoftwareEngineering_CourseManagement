@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Created by PhpStorm.
  * User: Jia Xinglei
@@ -6,10 +6,10 @@
  * Time: 15:48
  */
 
-$servername = "localhost";  //此处需填写正确的服务器名称
-$username = "root";  //此处需填写正确的用户名
-$password = "root";  //此处需填写正确的密码
-$dbname = "course_info";
+$servername = "bdm290150117.my3w.com";  //此处需填写正确的服务器名称
+$username = "bdm290150117";  //此处需填写正确的用户名
+$password = "RuanGong8102";  //此处需填写正确的密码
+$dbname = "bdm290150117_db";
 ?>
 
 <?php
@@ -31,7 +31,7 @@ $dbname = "course_info";
 
                 session_start();
                 $user = $_SESSION["username"];
-                $id=$_SESSION['id'];
+                $id=$_GET['id'];
                 if($com == "")
                 {
                     echo "<script>alert('请输入评论！'); history.go(-1);</script>";

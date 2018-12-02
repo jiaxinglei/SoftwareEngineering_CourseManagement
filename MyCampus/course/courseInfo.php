@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Created by PhpStorm.
  * User: Jia Xinglei
@@ -6,10 +6,10 @@
  * Time: 15:48
  */
 
-$servername = "localhost";  //此处需填写正确的服务器名称
-$username = "root";  //此处需填写正确的用户名
-$password = "root";  //此处需填写正确的密码
-$dbname = "course_info";
+$servername = "bdm290150117.my3w.com";  //此处需填写正确的服务器名称
+$username = "bdm290150117";  //此处需填写正确的用户名
+$password = "RuanGong8102";  //此处需填写正确的密码
+$dbname = "bdm290150117_db";
 ?>
 <?php
 $conn=mysqli_connect($servername,$username,$password);
@@ -225,11 +225,11 @@ mysqli_select_db($conn,$dbname)or die("数据库访问错误");
 <!--            </body>-->
 
             <?php
-            $id=$_GET['id'];
             $_SESSION["id"]=$id;
+
             ?>
 
-            <form action='../comment.php' method='post' id="commentlist">
+            <form action='../comment.php?id=<?=$id?>' method='post' id=$id>
                 <label for="message">Comments</label><br>
                 <table>
                     <textarea name='comment' cols='40' rows='5'></textarea>
@@ -245,9 +245,10 @@ mysqli_select_db($conn,$dbname)or die("数据库访问错误");
                         printf("Error: %s\n", mysqli_error($conn));
                         exit();
                     }
-                    $row=mysqli_fetch_array($result);
+                    
                     $i=0;
                     while($i<$result->num_rows){
+                        $row=mysqli_fetch_array($result);
                         echo "<p class='post-info'>Posted by {$row['username']}|{$row['date']}</p>";
                         echo "<p>{$row['content']}</p>";
                         $i++;

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Created by PhpStorm.
  * User: JIA12
@@ -6,10 +6,10 @@
  * Time: 11:05
  */
 
-$servername = "localhost";  //此处需填写正确的服务器名称
-$username = "root";  //此处需填写正确的用户名
-$password = "root";  //此处需填写正确的密码
-$dbname = "stu_info";
+$servername = "bdm290150117.my3w.com";  //此处需填写正确的服务器名称
+$username = "bdm290150117";  //此处需填写正确的用户名
+$password = "RuanGong8102";  //此处需填写正确的密码
+$dbname = "bdm290150117_db";
 ?>
 <?php
     session_start();

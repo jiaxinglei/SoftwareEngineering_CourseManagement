@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Created by PhpStorm.
  * User: Jia Xinglei
@@ -6,10 +6,10 @@
  * Time: 15:48
  */
 
-$servername = "localhost";  //此处需填写正确的服务器名称
-$username = "root";  //此处需填写正确的用户名
-$password = "root";  //此处需填写正确的密码
-$dbname = "stu_info";
+$servername = "bdm290150117.my3w.com";  //此处需填写正确的服务器名称
+$username = "bdm290150117";  //此处需填写正确的用户名
+$password = "RuanGong8102";  //此处需填写正确的密码
+$dbname = "bdm290150117_db";
 ?>
 <?php
 $conn=mysqli_connect($servername,$username,$password);
@@ -80,7 +80,7 @@ mysqli_select_db($conn,$dbname)or die("数据库访问错误");
             <br>
             <!--此处需要导入学生信息-->
             <?php
-                session_start();
+                @session_start();
                 echo "<h4>Username:  {$_SESSION['username']}</h4>";
                 echo "<h4>Name:  {$_SESSION['name']}</h4>";
                 echo "<h4>Student Number: {$_SESSION['stu_id']}</h4>";
